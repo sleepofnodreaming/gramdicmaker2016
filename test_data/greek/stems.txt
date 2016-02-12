@@ -1,0 +1,18 @@
+﻿-lexeme
+ lex: ωφέλημα
+ stem: ωφέλημα.|ωφελημα.|ωφελήμα.|ωφελημά.
+ gramm: NOUN,n
+ paradigm: sb_sp_neutr_ta1
+ transl_en: profit
+-lexeme
+ lex: ασχημαίνω
+ stem: ασχημ.|ασχήμ.
+ gramm: V
+ paradigm: ain-yn-0
+ transl_en: get worse
+-lexeme
+ lex: σύνθετος
+ stem: σύνθετ.|συνθετ.
+ gramm: ADJ
+ paradigm: adj_os3_comp
+ transl_en: complex

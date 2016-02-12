@@ -1,0 +1,7 @@
+﻿-conversion: N-poss-vowel
+ stem-base: 0
+ -new-stem: 1
+  replace: ь\.$ -> .
+  replace: п\.$ -> б
+  replace: к\.$ -> г
+  replace: қ\.$ -> ғ

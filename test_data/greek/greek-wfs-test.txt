@@ -1,0 +1,655 @@
+﻿<Wordform object>
+ωφέλημα
+ωφέλημα; NOUN,n,sg,nom
+ωφέλημα
+
+<Wordform object>
+ωφέλημα
+ωφέλημα; NOUN,n,sg,acc
+ωφέλημα
+
+<Wordform object>
+ωφέληματα
+ωφέλημα; NOUN,n,pl,acc
+ωφέλημα-τα
+
+<Wordform object>
+ωφελήματος
+ωφέλημα; NOUN,n,sg,gen
+ωφελήμα-τος
+
+<Wordform object>
+ωφελήματα
+ωφέλημα; NOUN,n,pl,nom
+ωφελήμα-τα
+
+<Wordform object>
+ωφελημάτων
+ωφέλημα; NOUN,n,pl,gen
+ωφελημά-των
+
+<Wordform object>
+ασχημαίνω
+ασχημαίνω; V,ipfv,pres.act.1.sg
+ασχημ-αίν-ω
+
+<Wordform object>
+ασχημαίνεις
+ασχημαίνω; V,ipfv,pres.act.2.sg
+ασχημ-αίν-εις
+
+<Wordform object>
+ασχημαίνει
+ασχημαίνω; V,ipfv,pres.act.3.sg
+ασχημ-αίν-ει
+
+<Wordform object>
+ασχημαίνουμε
+ασχημαίνω; V,ipfv,pres.act.1.pl
+ασχημ-αίν-ουμε
+
+<Wordform object>
+ασχημαίνομε
+ασχημαίνω; V,ipfv,pres.act.1.pl
+ασχημ-αίν-ομε
+
+<Wordform object>
+ασχημαίνετε
+ασχημαίνω; V,ipfv,pres.act.2.pl
+ασχημ-αίν-ετε
+
+<Wordform object>
+ασχημαίνουν
+ασχημαίνω; V,ipfv,pres.act.3.pl
+ασχημ-αίν-ουν
+
+<Wordform object>
+ασχημαίνουνε
+ασχημαίνω; V,ipfv,pres.act.3.pl
+ασχημ-αίν-ουνε
+
+<Wordform object>
+ασχημαίναμε
+ασχημαίνω; V,ipfv,past.act.1.pl
+ασχημ-αίν-αμε
+
+<Wordform object>
+ασχημαίνατε
+ασχημαίνω; V,ipfv,past.act.2.pl
+ασχημ-αίν-ατε
+
+<Wordform object>
+ασχημαίνανε
+ασχημαίνω; V,ipfv,past.act.3.pl
+ασχημ-αίν-ανε
+
+<Wordform object>
+ασχημαίνομαι
+ασχημαίνω; V,ipfv,pres.pass.1.sg
+ασχημ-αίν-ομαι
+
+<Wordform object>
+ασχημαίνεσαι
+ασχημαίνω; V,ipfv,pres.pass.2.sg
+ασχημ-αίν-εσαι
+
+<Wordform object>
+ασχημαίνεστε
+ασχημαίνω; V,ipfv,pres.pass.2.pl
+ασχημ-αίν-εστε
+
+<Wordform object>
+ασχημαίνεται
+ασχημαίνω; V,ipfv,pres.pass.3.sg
+ασχημ-αίν-εται
+
+<Wordform object>
+ασχημαίνονται
+ασχημαίνω; V,ipfv,pres.pass.3.pl
+ασχημ-αίν-ονται
+
+<Wordform object>
+ασχημαίνονταν
+ασχημαίνω; V,ipfv,past.pass.3.pl
+ασχημ-αίν-ονταν
+
+<Wordform object>
+ασχημαίνετε
+ασχημαίνω; V,ipfv,imper.act.2.pl
+ασχημ-αίν-ετε
+
+<Wordform object>
+ασχημαίνοντας
+ασχημαίνω; V,ipfv,ger
+ασχημ-αίν-οντας
+
+<Wordform object>
+ασχημαινόμαστε
+ασχημαίνω; V,ipfv,pres.pass.1.pl
+ασχημ-αιν-όμαστε
+
+<Wordform object>
+ασχημαινόσαστε
+ασχημαίνω; V,ipfv,pres.pass.2.pl
+ασχημ-αιν-όσαστε
+
+<Wordform object>
+ασχημαινόμουν
+ασχημαίνω; V,ipfv,past.pass.1.sg
+ασχημ-αιν-όμουν
+
+<Wordform object>
+ασχημαινόμουνα
+ασχημαίνω; V,ipfv,past.pass.1.sg
+ασχημ-αιν-όμουνα
+
+<Wordform object>
+ασχημαινόσουν
+ασχημαίνω; V,ipfv,past.pass.2.sg
+ασχημ-αιν-όσουν
+
+<Wordform object>
+ασχημαινόσουνα
+ασχημαίνω; V,ipfv,past.pass.2.sg
+ασχημ-αιν-όσουνα
+
+<Wordform object>
+ασχημαινόταν
+ασχημαίνω; V,ipfv,past.pass.3.sg
+ασχημ-αιν-όταν
+
+<Wordform object>
+ασχημαινότανε
+ασχημαίνω; V,ipfv,past.pass.3.sg
+ασχημ-αιν-ότανε
+
+<Wordform object>
+ασχημαινόμαστε
+ασχημαίνω; V,ipfv,past.pass.1.pl
+ασχημ-αιν-όμαστε
+
+<Wordform object>
+ασχημαινόμασταν
+ασχημαίνω; V,ipfv,past.pass.1.pl
+ασχημ-αιν-όμασταν
+
+<Wordform object>
+ασχημαινόσαστε
+ασχημαίνω; V,ipfv,past.pass.2.pl
+ασχημ-αιν-όσαστε
+
+<Wordform object>
+ασχημαινόσασταν
+ασχημαίνω; V,ipfv,past.pass.2.pl
+ασχημ-αιν-όσασταν
+
+<Wordform object>
+ασχημαινόντανε
+ασχημαίνω; V,ipfv,past.pass.3.pl
+ασχημ-αιν-όντανε
+
+<Wordform object>
+ασχημαινόντουσαν
+ασχημαίνω; V,ipfv,past.pass.3.pl
+ασχημ-αιν-όντουσαν
+
+<Wordform object>
+ασχημύνω
+ασχημαίνω; V,pfv,pres.act.1.sg
+ασχημ-ύν-ω
+
+<Wordform object>
+ασχημύνεις
+ασχημαίνω; V,pfv,pres.act.2.sg
+ασχημ-ύν-εις
+
+<Wordform object>
+ασχημύνει
+ασχημαίνω; V,pfv,pres.act.3.sg
+ασχημ-ύν-ει
+
+<Wordform object>
+ασχημύνουμε
+ασχημαίνω; V,pfv,pres.act.1.pl
+ασχημ-ύν-ουμε
+
+<Wordform object>
+ασχημύνομε
+ασχημαίνω; V,pfv,pres.act.1.pl
+ασχημ-ύν-ομε
+
+<Wordform object>
+ασχημύνετε
+ασχημαίνω; V,pfv,pres.act.2.pl
+ασχημ-ύν-ετε
+
+<Wordform object>
+ασχημύνουν
+ασχημαίνω; V,pfv,pres.act.3.pl
+ασχημ-ύν-ουν
+
+<Wordform object>
+ασχημύνουνε
+ασχημαίνω; V,pfv,pres.act.3.pl
+ασχημ-ύν-ουνε
+
+<Wordform object>
+ασχημύναμε
+ασχημαίνω; V,pfv,past.act.1.pl
+ασχημ-ύν-αμε
+
+<Wordform object>
+ασχημύνατε
+ασχημαίνω; V,pfv,past.act.2.pl
+ασχημ-ύν-ατε
+
+<Wordform object>
+ασχημύνανε
+ασχημαίνω; V,pfv,past.act.3.pl
+ασχημ-ύν-ανε
+
+<Wordform object>
+ασχημύνει
+ασχημαίνω; V,pfv,inf.act
+ασχημ-ύν-ει
+
+<Wordform object>
+ασχημύνετε
+ασχημαίνω; V,pfv,imper.act.2.pl
+ασχημ-ύν-ετε
+
+<Wordform object>
+ασχήμαινα
+ασχημαίνω; V,ipfv,past.act.1.sg
+ασχήμ-αιν-α
+
+<Wordform object>
+ασχήμαινες
+ασχημαίνω; V,ipfv,past.act.2.sg
+ασχήμ-αιν-ες
+
+<Wordform object>
+ασχήμαινε
+ασχημαίνω; V,ipfv,past.act.3.sg
+ασχήμ-αιν-ε
+
+<Wordform object>
+ασχήμαιναν
+ασχημαίνω; V,ipfv,past.act.3.pl
+ασχήμ-αιν-αν
+
+<Wordform object>
+ασχήμαινε
+ασχημαίνω; V,ipfv,imper.act.2.sg
+ασχήμ-αιν-ε
+
+<Wordform object>
+ασχήμυνα
+ασχημαίνω; V,pfv,past.act.1.sg
+ασχήμ-υν-α
+
+<Wordform object>
+ασχήμυνες
+ασχημαίνω; V,pfv,past.act.2.sg
+ασχήμ-υν-ες
+
+<Wordform object>
+ασχήμυνε
+ασχημαίνω; V,pfv,past.act.3.sg
+ασχήμ-υν-ε
+
+<Wordform object>
+ασχήμυναν
+ασχημαίνω; V,pfv,past.act.3.pl
+ασχήμ-υν-αν
+
+<Wordform object>
+ασχήμυνε
+ασχημαίνω; V,pfv,imper.act.2.sg
+ασχήμ-υν-ε
+
+<Wordform object>
+σύνθετος
+σύνθετος; ADJ,pos,m,sg,nom
+σύνθετ-ος
+
+<Wordform object>
+σύνθετου
+σύνθετος; ADJ,pos,m,sg,gen
+σύνθετ-ου
+
+<Wordform object>
+σύνθετο
+σύνθετος; ADJ,pos,m,sg,acc
+σύνθετ-ο
+
+<Wordform object>
+σύνθετον
+σύνθετος; ADJ,pos,m,sg,acc
+σύνθετ-ον
+
+<Wordform object>
+σύνθετε
+σύνθετος; ADJ,pos,m,sg,voc
+σύνθετ-ε
+
+<Wordform object>
+σύνθετοι
+σύνθετος; ADJ,pos,m,pl,nom
+σύνθετ-οι
+
+<Wordform object>
+σύνθετων
+σύνθετος; ADJ,pos,m,pl,gen
+σύνθετ-ων
+
+<Wordform object>
+σύνθετους
+σύνθετος; ADJ,pos,m,pl,acc
+σύνθετ-ους
+
+<Wordform object>
+σύνθετη
+σύνθετος; ADJ,pos,f,sg,nom
+σύνθετ-η
+
+<Wordform object>
+σύνθετης
+σύνθετος; ADJ,pos,f,sg,gen
+σύνθετ-ης
+
+<Wordform object>
+σύνθετη
+σύνθετος; ADJ,pos,f,sg,acc
+σύνθετ-η
+
+<Wordform object>
+σύνθετην
+σύνθετος; ADJ,pos,f,sg,acc
+σύνθετ-ην
+
+<Wordform object>
+σύνθετες
+σύνθετος; ADJ,pos,f,pl,nom
+σύνθετ-ες
+
+<Wordform object>
+σύνθετων
+σύνθετος; ADJ,pos,f,pl,gen
+σύνθετ-ων
+
+<Wordform object>
+σύνθετες
+σύνθετος; ADJ,pos,f,pl,acc
+σύνθετ-ες
+
+<Wordform object>
+σύνθετο
+σύνθετος; ADJ,pos,n,sg,nom
+σύνθετ-ο
+
+<Wordform object>
+σύνθετον
+σύνθετος; ADJ,pos,n,sg,nom
+σύνθετ-ον
+
+<Wordform object>
+σύνθετου
+σύνθετος; ADJ,pos,n,sg,gen
+σύνθετ-ου
+
+<Wordform object>
+σύνθετο
+σύνθετος; ADJ,pos,n,sg,acc
+σύνθετ-ο
+
+<Wordform object>
+σύνθετον
+σύνθετος; ADJ,pos,n,sg,acc
+σύνθετ-ον
+
+<Wordform object>
+σύνθετα
+σύνθετος; ADJ,pos,n,pl,nom
+σύνθετ-α
+
+<Wordform object>
+σύνθετων
+σύνθετος; ADJ,pos,n,pl,gen
+σύνθετ-ων
+
+<Wordform object>
+σύνθετα
+σύνθετος; ADJ,pos,n,pl,acc
+σύνθετ-α
+
+<Wordform object>
+συνθετότερος
+σύνθετος; ADJ,com,m,sg,nom
+συνθετ-ότερος
+
+<Wordform object>
+συνθετότερου
+σύνθετος; ADJ,com,m,sg,gen
+συνθετ-ότερου
+
+<Wordform object>
+συνθετότερο
+σύνθετος; ADJ,com,m,sg,acc
+συνθετ-ότερο
+
+<Wordform object>
+συνθετότερον
+σύνθετος; ADJ,com,m,sg,acc
+συνθετ-ότερον
+
+<Wordform object>
+συνθετότερε
+σύνθετος; ADJ,com,m,sg,voc
+συνθετ-ότερε
+
+<Wordform object>
+συνθετότεροι
+σύνθετος; ADJ,com,m,pl,nom
+συνθετ-ότεροι
+
+<Wordform object>
+συνθετότερων
+σύνθετος; ADJ,com,m,pl,gen
+συνθετ-ότερων
+
+<Wordform object>
+συνθετότερους
+σύνθετος; ADJ,com,m,pl,acc
+συνθετ-ότερους
+
+<Wordform object>
+συνθετότερη
+σύνθετος; ADJ,com,f,sg,nom
+συνθετ-ότερη
+
+<Wordform object>
+συνθετότερης
+σύνθετος; ADJ,com,f,sg,gen
+συνθετ-ότερης
+
+<Wordform object>
+συνθετότερη
+σύνθετος; ADJ,com,f,sg,acc
+συνθετ-ότερη
+
+<Wordform object>
+συνθετότερην
+σύνθετος; ADJ,com,f,sg,acc
+συνθετ-ότερην
+
+<Wordform object>
+συνθετότερες
+σύνθετος; ADJ,com,f,pl,nom
+συνθετ-ότερες
+
+<Wordform object>
+συνθετότερων
+σύνθετος; ADJ,com,f,pl,gen
+συνθετ-ότερων
+
+<Wordform object>
+συνθετότερες
+σύνθετος; ADJ,com,f,pl,acc
+συνθετ-ότερες
+
+<Wordform object>
+συνθετότερο
+σύνθετος; ADJ,com,n,sg,nom
+συνθετ-ότερο
+
+<Wordform object>
+συνθετότερον
+σύνθετος; ADJ,com,n,sg,nom
+συνθετ-ότερον
+
+<Wordform object>
+συνθετότερου
+σύνθετος; ADJ,com,n,sg,gen
+συνθετ-ότερου
+
+<Wordform object>
+συνθετότερο
+σύνθετος; ADJ,com,n,sg,acc
+συνθετ-ότερο
+
+<Wordform object>
+συνθετότερον
+σύνθετος; ADJ,com,n,sg,acc
+συνθετ-ότερον
+
+<Wordform object>
+συνθετότερα
+σύνθετος; ADJ,com,n,pl,nom
+συνθετ-ότερα
+
+<Wordform object>
+συνθετότερων
+σύνθετος; ADJ,com,n,pl,gen
+συνθετ-ότερων
+
+<Wordform object>
+συνθετότερα
+σύνθετος; ADJ,com,n,pl,acc
+συνθετ-ότερα
+
+<Wordform object>
+συνθετότατος
+σύνθετος; ADJ,sup,m,sg,nom
+συνθετ-ότατος
+
+<Wordform object>
+συνθετότατου
+σύνθετος; ADJ,sup,m,sg,gen
+συνθετ-ότατου
+
+<Wordform object>
+συνθετότατο
+σύνθετος; ADJ,sup,m,sg,acc
+συνθετ-ότατο
+
+<Wordform object>
+συνθετότατον
+σύνθετος; ADJ,sup,m,sg,acc
+συνθετ-ότατον
+
+<Wordform object>
+συνθετότατε
+σύνθετος; ADJ,sup,m,sg,voc
+συνθετ-ότατε
+
+<Wordform object>
+συνθετότατοι
+σύνθετος; ADJ,sup,m,pl,nom
+συνθετ-ότατοι
+
+<Wordform object>
+συνθετότατων
+σύνθετος; ADJ,sup,m,pl,gen
+συνθετ-ότατων
+
+<Wordform object>
+συνθετότατους
+σύνθετος; ADJ,sup,m,pl,acc
+συνθετ-ότατους
+
+<Wordform object>
+συνθετότατη
+σύνθετος; ADJ,sup,f,sg,nom
+συνθετ-ότατη
+
+<Wordform object>
+συνθετότατης
+σύνθετος; ADJ,sup,f,sg,gen
+συνθετ-ότατης
+
+<Wordform object>
+συνθετότατη
+σύνθετος; ADJ,sup,f,sg,acc
+συνθετ-ότατη
+
+<Wordform object>
+συνθετότατην
+σύνθετος; ADJ,sup,f,sg,acc
+συνθετ-ότατην
+
+<Wordform object>
+συνθετότατες
+σύνθετος; ADJ,sup,f,pl,nom
+συνθετ-ότατες
+
+<Wordform object>
+συνθετότατων
+σύνθετος; ADJ,sup,f,pl,gen
+συνθετ-ότατων
+
+<Wordform object>
+συνθετότατες
+σύνθετος; ADJ,sup,f,pl,acc
+συνθετ-ότατες
+
+<Wordform object>
+συνθετότατο
+σύνθετος; ADJ,sup,n,sg,nom
+συνθετ-ότατο
+
+<Wordform object>
+συνθετότατον
+σύνθετος; ADJ,sup,n,sg,nom
+συνθετ-ότατον
+
+<Wordform object>
+συνθετότατου
+σύνθετος; ADJ,sup,n,sg,gen
+συνθετ-ότατου
+
+<Wordform object>
+συνθετότατο
+σύνθετος; ADJ,sup,n,sg,acc
+συνθετ-ότατο
+
+<Wordform object>
+συνθετότατον
+σύνθετος; ADJ,sup,n,sg,acc
+συνθετ-ότατον
+
+<Wordform object>
+συνθετότατα
+σύνθετος; ADJ,sup,n,pl,nom
+συνθετ-ότατα
+
+<Wordform object>
+συνθετότατων
+σύνθετος; ADJ,sup,n,pl,gen
+συνθετ-ότατων
+
+<Wordform object>
+συνθετότατα
+σύνθετος; ADJ,sup,n,pl,acc
+συνθετ-ότατα
+
