@@ -1,0 +1,2418 @@
+﻿-lexeme
+ lex: αὐστηρός
+ stem: αὐστηρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: strict, severe
+-lexeme
+ lex: βαριός
+ stem: βαρι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: βασιλικός
+ stem: βασιλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: royal
+-lexeme
+ lex: βδελυρός
+ stem: βδελυρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: βενετικός
+ stem: βενετικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Venetian
+-lexeme
+ lex: βενετός
+ stem: βενετ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Venetian
+-lexeme
+ lex: βιοτικός
+ stem: βιοτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: life
+-lexeme
+ lex: βλαβερός
+ stem: βλαβερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: βλοσυρός
+ stem: βλοσυρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: βορειανατολικός
+ stem: βορειανατολικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: North-Eastern
+-lexeme
+ lex: βορεινός
+ stem: βορειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Northern
+-lexeme
+ lex: βραχνός
+ stem: βραχν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: βρεφικός
+ stem: βρεφικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: βωβός
+ stem: βωβ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: speechless
+-lexeme
+ lex: γαλανός
+ stem: γαλαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: blue
+-lexeme
+ lex: γαλλικός
+ stem: γαλλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: French
+-lexeme
+ lex: γειτονικός
+ stem: γειτονικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: neighboring
+-lexeme
+ lex: γεμιστός
+ stem: γεμιστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γενικός
+ stem: γενικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: general
+-lexeme
+ lex: γεραρός
+ stem: γεραρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: γερμανικός
+ stem: γερμανικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: German
+-lexeme
+ lex: γεροντικός
+ stem: γεροντικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γηραιός
+ stem: γηραι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: γιατρικός
+ stem: γιατρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γλαυκός
+ stem: γλαυκ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γλυφός
+ stem: γλυφ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γνωστικός
+ stem: γνωστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γνωστός
+ stem: γνωστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: famous
+-lexeme
+ lex: γοργός
+ stem: γοργ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: swift, fast
+-lexeme
+ lex: γραπτός
+ stem: γραπτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: written
+-lexeme
+ lex: γραφικός
+ stem: γραφικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: γυμνός
+ stem: γυμν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: naked, nude
+-lexeme
+ lex: δαιμονικός
+ stem: δαιμονικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: daemonic
+-lexeme
+ lex: δειλός
+ stem: δειλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: δεκτός
+ stem: δεκτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: acceptable
+-lexeme
+ lex: δεξιός
+ stem: δεξι.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: right
+-lexeme
+ lex: δημοτικός
+ stem: δημοτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: popular
+-lexeme
+ lex: διαβατικός
+ stem: διαβατικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: διακριτικός
+ stem: διακριτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: δικός
+ stem: δικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: own
+-lexeme
+ lex: διπλός
+ stem: διπλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: διττός
+ stem: διττ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: δογματικός
+ stem: δογματικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: δραματικός
+ stem: δραματικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dramatic
+-lexeme
+ lex: δροσερός
+ stem: δροσερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: cool
+-lexeme
+ lex: δυνατός
+ stem: δυνατ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: strong; possible
+-lexeme
+ lex: δυτικός
+ stem: δυτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Western
+-lexeme
+ lex: εἰδικός
+ stem: εἰδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: special
+-lexeme
+ lex: εἰδωλολατρικός
+ stem: εἰδωλολατρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: εἰρηνικός
+ stem: εἰρηνικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: peaceful
+-lexeme
+ lex: εὐγενικός
+ stem: εὐγενικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: polite
+-lexeme
+ lex: εὐεργετικός
+ stem: εὐεργετικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: εὐνοϊκός
+ stem: εὐνοϊκ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: εὑρός
+ stem: εὑρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ζεστός
+ stem: ζεστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: hot
+-lexeme
+ lex: ζοφερός
+ stem: ζοφερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ζωηρός
+ stem: ζωηρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: vivid
+-lexeme
+ lex: ζωντανός
+ stem: ζωνταν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: living
+-lexeme
+ lex: θαλασσινός
+ stem: θαλασσιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: sea
+-lexeme
+ lex: θαμβός
+ stem: θαμβ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: θανατικός
+ stem: θανατικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: θαυμαστός
+ stem: θαυμαστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: wonderful
+-lexeme
+ lex: θεατός
+ stem: θεατ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: visible
+-lexeme
+ lex: θεολογικός
+ stem: θεολογικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: theological
+-lexeme
+ lex: θερμός
+ stem: θερμ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: warm, hot
+-lexeme
+ lex: θετικός
+ stem: θετικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: positive, reliable
+-lexeme
+ lex: θετός
+ stem: θετ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: foster, adoptive
+-lexeme
+ lex: θηλυκός
+ stem: θηλυκ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: femail
+-lexeme
+ lex: θλιβερός
+ stem: θλιβερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: sad
+-lexeme
+ lex: θνητός
+ stem: θνητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: mortal
+-lexeme
+ lex: θρησκευτικός
+ stem: θρησκευτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: religious
+-lexeme
+ lex: θωπευτικός
+ stem: θωπευτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: θός
+ stem: θ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: καθαρός
+ stem: καθαρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: clean
+-lexeme
+ lex: καθημερινός
+ stem: καθημεριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: everyday
+-lexeme
+ lex: καθολικός
+ stem: καθολικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: universal
+-lexeme
+ lex: καινός
+ stem: καιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: fresh
+-lexeme
+ lex: κακός
+ stem: κακ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: bad
+-lexeme
+ lex: καλκουτιανός
+ stem: καλκουτιαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: καλογερικός
+ stem: καλογερικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: καλογηρικός
+ stem: καλογηρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: καλός
+ stem: καλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: good
+-lexeme
+ lex: καστανός
+ stem: κασταν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κατανυκτικός
+ stem: κατανυκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: καταπληκτικός
+ stem: καταπληκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: amazing
+-lexeme
+ lex: καυστικός
+ stem: καυστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: καχεκτικός
+ stem: καχεκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κεντητός
+ stem: κεντητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κεντρικός
+ stem: κεντρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: central
+-lexeme
+ lex: κενός
+ stem: κεν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: empty
+-lexeme
+ lex: κηρωτός
+ stem: κηρωτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κλειστός
+ stem: κλειστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: closed
+-lexeme
+ lex: κοινωνικός
+ stem: κοινωνικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: common
+-lexeme
+ lex: κοινός
+ stem: κοιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: common
+-lexeme
+ lex: κολοβός
+ stem: κολοβ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: cut
+-lexeme
+ lex: κομψός
+ stem: κομψ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: elegant
+-lexeme
+ lex: κοντός
+ stem: κοντ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: short
+-lexeme
+ lex: κοσμικός
+ stem: κοσμικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: cosmic; secular
+-lexeme
+ lex: κραταιός
+ stem: κραται.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: κρυπτός
+ stem: κρυπτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κρυφός
+ stem: κρυφ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: hidden
+-lexeme
+ lex: κυανός
+ stem: κυαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κυρτός
+ stem: κυρτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κωμικοτραγικός
+ stem: κωμικοτραγικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: κωμικός
+ stem: κωμικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: comic
+-lexeme
+ lex: κωφός
+ stem: κωφ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: blunted, dull
+-lexeme
+ lex: λαμπρός
+ stem: λαμπρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: bright
+-lexeme
+ lex: λατινικός
+ stem: λατινικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Latin; Roman Catholic
+-lexeme
+ lex: λεπτός
+ stem: λεπτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: thin, light
+-lexeme
+ lex: λευκός
+ stem: λευκ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: white
+-lexeme
+ lex: ληστός
+ stem: ληστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: λιγυρός
+ stem: λιγυρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: shrill, high pitched
+-lexeme
+ lex: λιτός
+ stem: λιτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: λογικός
+ stem: λογικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: logic
+-lexeme
+ lex: λοιπός
+ stem: λοιπ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: λυπηρός
+ stem: λυπηρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: μαγευτικός
+ stem: μαγευτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μαγικός
+ stem: μαγικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: magic
+-lexeme
+ lex: μακρινός
+ stem: μακριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: far away
+-lexeme
+ lex: μακρός
+ stem: μακρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: long
+-lexeme
+ lex: μαλακός
+ stem: μαλακ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: soft
+-lexeme
+ lex: μαντικός
+ stem: μαντικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μαχητός
+ stem: μαχητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: vincible
+-lexeme
+ lex: μελαγχολικός
+ stem: μελαγχολικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: melancholic
+-lexeme
+ lex: μελαγχροινός
+ stem: μελαγχροιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dark-haired
+-lexeme
+ lex: μελαχροινός
+ stem: μελαχροιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dark-haired
+-lexeme
+ lex: μελαψός
+ stem: μελαψ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μερικός
+ stem: μερικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: some
+-lexeme
+ lex: μεσημβρινός
+ stem: μεσημβριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: meridional, Southern
+-lexeme
+ lex: μεστός
+ stem: μεστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: full
+-lexeme
+ lex: μεταλλευτικός
+ stem: μεταλλευτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μεταλλευτός
+ stem: μεταλλευτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μεταξωτός
+ stem: μεταξωτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: silk
+-lexeme
+ lex: μετρητός
+ stem: μετρητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: measurable
+-lexeme
+ lex: μηδαμινός
+ stem: μηδαμιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μητρικός
+ stem: μητρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: maternal
+-lexeme
+ lex: μικρός
+ stem: μικρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: small
+-lexeme
+ lex: μισητός
+ stem: μισητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: hated
+-lexeme
+ lex: μισός
+ stem: μισ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: half
+-lexeme
+ lex: μοναδικός
+ stem: μοναδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: single
+-lexeme
+ lex: μοναστηριακός
+ stem: μοναστηριακ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μοναστικός
+ stem: μοναστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μοναχικός
+ stem: μοναχικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μοναχός
+ stem: μοναχ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: μοχθηρός
+ stem: μοχθηρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: deceiving, bad
+-lexeme
+ lex: μυστικός
+ stem: μυστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: mystical
+-lexeme
+ lex: ναρκωτικός
+ stem: ναρκωτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: narcotic
+-lexeme
+ lex: ναυτικός
+ stem: ναυτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: naval
+-lexeme
+ lex: νεανικός
+ stem: νεανικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: νεαρός
+ stem: νεαρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: young
+-lexeme
+ lex: νεκρικός
+ stem: νεκρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: νεκρός
+ stem: νεκρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: dead
+-lexeme
+ lex: νευρικός
+ stem: νευρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: νηστικός
+ stem: νηστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: νυκτερινός
+ stem: νυκτεριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: night
+-lexeme
+ lex: νυκτικός
+ stem: νυκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: νωθρός
+ stem: νωθρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: slow
+-lexeme
+ lex: νωπός
+ stem: νωπ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: fresh
+-lexeme
+ lex: ξανθός
+ stem: ξανθ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: fair-haired, blond
+-lexeme
+ lex: ξηρός
+ stem: ξηρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dry
+-lexeme
+ lex: ξυλικός
+ stem: ξυλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: wooden
+-lexeme
+ lex: ξυπνητός
+ stem: ξυπνητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: οἰκιακός
+ stem: οἰκιακ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: οἰκογενειακός
+ stem: οἰκογενειακ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: οἰκονομικός
+ stem: οἰκονομικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: economic
+-lexeme
+ lex: παγερός
+ stem: παγερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: παιδικός
+ stem: παιδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: children's
+-lexeme
+ lex: παλαιός
+ stem: παλαι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: old
+-lexeme
+ lex: παλιός
+ stem: παλι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: old
+-lexeme
+ lex: πανηγυρικός
+ stem: πανηγυρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: παραμικρός
+ stem: παραμικρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: very small
+-lexeme
+ lex: παραπονετικός
+ stem: παραπονετικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: παρθενικός
+ stem: παρθενικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: virginal
+-lexeme
+ lex: παροδικός
+ stem: παροδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πατρικός
+ stem: πατρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: paternal
+-lexeme
+ lex: πελιδνός
+ stem: πελιδν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πενιχρός
+ stem: πενιχρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: περισσός
+ stem: περισσ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: abundant, prodigious
+-lexeme
+ lex: περιττός
+ stem: περιττ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: unnecessary
+-lexeme
+ lex: πετεινός
+ stem: πετειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πιθανός
+ stem: πιθαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: probable
+-lexeme
+ lex: πικρός
+ stem: πικρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: bitter
+-lexeme
+ lex: πιστοποιητικός
+ stem: πιστοποιητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πιστός
+ stem: πιστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: sure
+-lexeme
+ lex: πλαστός
+ stem: πλαστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: artificial; spurious
+-lexeme
+ lex: πλατωνικός
+ stem: πλατωνικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: platonic
+-lexeme
+ lex: πνευματικός
+ stem: πνευματικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: spiritual
+-lexeme
+ lex: πνιγηρός
+ stem: πνιγηρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: ποθεινός
+ stem: ποθειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ποιητικός
+ stem: ποιητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: poetic
+-lexeme
+ lex: ποιμενικός
+ stem: ποιμενικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πολεμικός
+ stem: πολεμικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: warlike; polemic
+-lexeme
+ lex: πολεμιστός
+ stem: πολεμιστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πολιτικός
+ stem: πολιτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: political, civil
+-lexeme
+ lex: πολιός
+ stem: πολι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: grey
+-lexeme
+ lex: πονηρός
+ stem: πονηρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: tricky, cunning
+-lexeme
+ lex: πραγματικός
+ stem: πραγματικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: real
+-lexeme
+ lex: προσεκτικός
+ stem: προσεκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: careful, cautious
+-lexeme
+ lex: προσωρινός
+ stem: προσωριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: temporary
+-lexeme
+ lex: προφυλακτικός
+ stem: προφυλακτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: preventive
+-lexeme
+ lex: πρωινός
+ stem: πρωιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: morning
+-lexeme
+ lex: πτερωτός
+ stem: πτερωτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: πτωχός
+ stem: πτωχ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: poor
+-lexeme
+ lex: πυκνός
+ stem: πυκν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dense
+-lexeme
+ lex: ρευστός
+ stem: ρευστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σαρκαστικός
+ stem: σαρκαστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σαρκικός
+ stem: σαρκικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: carnal
+-lexeme
+ lex: σατανικός
+ stem: σατανικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: satanic
+-lexeme
+ lex: σατυρικός
+ stem: σατυρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: satyrical
+-lexeme
+ lex: σεμνός
+ stem: σεμν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σεπτός
+ stem: σεπτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σημερινός
+ stem: σημεριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: modern, hodiernal
+-lexeme
+ lex: σιγαλός
+ stem: σιγαλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σιγανός
+ stem: σιγαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: quiet
+-lexeme
+ lex: σιγηλός
+ stem: σιγηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: silent
+-lexeme
+ lex: σιωπηλός
+ stem: σιωπηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: silent
+-lexeme
+ lex: σκαιός
+ stem: σκαι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: rough
+-lexeme
+ lex: σκεπαστός
+ stem: σκεπαστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σκιερός
+ stem: σκιερ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: shadowy
+-lexeme
+ lex: σκληρός
+ stem: σκληρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: hard
+-lexeme
+ lex: σκοτεινός
+ stem: σκοτειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dark
+-lexeme
+ lex: σκυθρωπός
+ stem: σκυθρωπ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σοβαρός
+ stem: σοβαρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: serious
+-lexeme
+ lex: σουλτανικός
+ stem: σουλτανικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σοφός
+ stem: σοφ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: wise
+-lexeme
+ lex: σπαρακτικός
+ stem: σπαρακτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σπασμωδικός
+ stem: σπασμωδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σταθερός
+ stem: σταθερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: στενός
+ stem: στεν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: narrow
+-lexeme
+ lex: στερεός
+ stem: στερε.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: dry
+-lexeme
+ lex: στιβαρός
+ stem: στιβαρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: στιλπνός
+ stem: στιλπν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: στιχουργικός
+ stem: στιχουργικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: στραβός
+ stem: στραβ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: distorted
+-lexeme
+ lex: στρατιωτικός
+ stem: στρατιωτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: military
+-lexeme
+ lex: στρυφνός
+ stem: στρυφν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: στυγνός
+ stem: στυγν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: συγκινητικός
+ stem: συγκινητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: συμβολικός
+ stem: συμβολικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: συμπαθητικός
+ stem: συμπαθητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: συχνός
+ stem: συχν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: frequent
+-lexeme
+ lex: σφοδρός
+ stem: σφοδρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: fierce
+-lexeme
+ lex: σχολαστικός
+ stem: σχολαστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: σωματικός
+ stem: σωματικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: bodily
+-lexeme
+ lex: σωστός
+ stem: σωστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: correct
+-lexeme
+ lex: τακτικός
+ stem: τακτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: tactic
+-lexeme
+ lex: ταπεινός
+ stem: ταπειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: humble
+-lexeme
+ lex: ταχυδρομικός
+ stem: ταχυδρομικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: mail
+-lexeme
+ lex: τερπνός
+ stem: τερπν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: τεχνητός
+ stem: τεχνητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: τολμηρός
+ stem: τολμηρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: brave
+-lexeme
+ lex: τοπικός
+ stem: τοπικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: τουρκικός
+ stem: τουρκικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Turkish
+-lexeme
+ lex: τραγικός
+ stem: τραγικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: tragic
+-lexeme
+ lex: τρελλός
+ stem: τρελλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: τρελός
+ stem: τρελ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: mad
+-lexeme
+ lex: τρομερός
+ stem: τρομερ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: frightful
+-lexeme
+ lex: τρυφερός
+ stem: τρυφερ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: tender, sweet
+-lexeme
+ lex: τυπικός
+ stem: τυπικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: typical
+-lexeme
+ lex: τυραννικός
+ stem: τυραννικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: τυφλός
+ stem: τυφλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: τυχηρός
+ stem: τυχηρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: random
+-lexeme
+ lex: φαιδρός
+ stem: φαιδρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: bright
+-lexeme
+ lex: φανερός
+ stem: φανερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: visible
+-lexeme
+ lex: φανταστικός
+ stem: φανταστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: fantastic
+-lexeme
+ lex: φιλικός
+ stem: φιλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: friendly
+-lexeme
+ lex: φιλοσοφικός
+ stem: φιλοσοφικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: philosophical
+-lexeme
+ lex: φλογερός
+ stem: φλογερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: fervent
+-lexeme
+ lex: φοβερός
+ stem: φοβερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: φορτικός
+ stem: φορτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: φρικτός
+ stem: φρικτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: φτωχός
+ stem: φτωχ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: poor
+-lexeme
+ lex: φυσικός
+ stem: φυσικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: natural
+-lexeme
+ lex: φωτεινός
+ stem: φωτειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: bright
+-lexeme
+ lex: χαμηλός
+ stem: χαμηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: low
+-lexeme
+ lex: χαρακτηριστικός
+ stem: χαρακτηριστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: χειμερινός
+ stem: χειμεριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: winter
+-lexeme
+ lex: χθαμαλός
+ stem: χθαμαλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: χλοερός
+ stem: χλοερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: verdant
+-lexeme
+ lex: χλωμός
+ stem: χλωμ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: pale
+-lexeme
+ lex: χλωρός
+ stem: χλωρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: χονδρός
+ stem: χονδρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: thick
+-lexeme
+ lex: χρηματικός
+ stem: χρηματικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: χριστιανικός
+ stem: χριστιανικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Christian
+-lexeme
+ lex: χρονικός
+ stem: χρονικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: time
+-lexeme
+ lex: χρυσός
+ stem: χρυσ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: golden
+-lexeme
+ lex: χωρικός
+ stem: χωρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: territorial
+-lexeme
+ lex: ψευτογιατρικός
+ stem: ψευτογιατρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ψηλαφητός
+ stem: ψηλαφητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ψιλός
+ stem: ψιλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: high
+-lexeme
+ lex: ψυχιατρικός
+ stem: ψυχιατρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: psychiatric
+-lexeme
+ lex: ψυχικός
+ stem: ψυχικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ψυχολογικός
+ stem: ψυχολογικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: psychological
+-lexeme
+ lex: ψυχρός
+ stem: ψυχρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: cold
+-lexeme
+ lex: ἀγαθός
+ stem: ἀγαθ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: kind
+-lexeme
+ lex: ἀγαπητός
+ stem: ἀγαπητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: beloved
+-lexeme
+ lex: ἀγαρηνός
+ stem: ἀγαρην.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Ottoman Muslim
+-lexeme
+ lex: ἀγγλικός
+ stem: ἀγγλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: English
+-lexeme
+ lex: ἀγροτικός
+ stem: ἀγροτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀδελφικός
+ stem: ἀδελφικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: brotherly
+-lexeme
+ lex: ἀκουστός
+ stem: ἀκουστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀλβανός
+ stem: ἀλβαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Albanian
+-lexeme
+ lex: ἀληθινός
+ stem: ἀληθιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: genuine
+-lexeme
+ lex: ἀμαυρός
+ stem: ἀμαυρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀμνός
+ stem: ἀμν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀμυδρός
+ stem: ἀμυδρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: dim, obscure
+-lexeme
+ lex: ἀναδεκτός
+ stem: ἀναδεκτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀνατολικός
+ stem: ἀνατολικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Eastern
+-lexeme
+ lex: ἀνδρικός
+ stem: ἀνδρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀνεκτός
+ stem: ἀνεκτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀνηφορικός
+ stem: ἀνηφορικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: ascending
+-lexeme
+ lex: ἀνιαρός
+ stem: ἀνιαρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: tedious
+-lexeme
+ lex: ἀνοικτός
+ stem: ἀνοικτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: open
+-lexeme
+ lex: ἀνοιχτός
+ stem: ἀνοιχτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: open
+-lexeme
+ lex: ἀντιφατικός
+ stem: ἀντιφατικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀοιδός
+ stem: ἀοιδ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀπατηλός
+ stem: ἀπατηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: deceptive, illusive
+-lexeme
+ lex: ἀπειλητικός
+ stem: ἀπειλητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀπελπιστικός
+ stem: ἀπελπιστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀραιός
+ stem: ἀραι.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: 
+-lexeme
+ lex: ἀργός
+ stem: ἀργ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: white, bright
+-lexeme
+ lex: ἀριστερός
+ stem: ἀριστερ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: left
+-lexeme
+ lex: ἀρκετός
+ stem: ἀρκετ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: sufficient
+-lexeme
+ lex: ἀρνητικός
+ stem: ἀρνητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: negative
+-lexeme
+ lex: ἀρραβωνιαστικός
+ stem: ἀρραβωνιαστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀρχαϊκός
+ stem: ἀρχαϊκ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἀρχικός
+ stem: ἀρχικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: initial
+-lexeme
+ lex: ἀτομικός
+ stem: ἀτομικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: atomic
+-lexeme
+ lex: ἀφρικανικός
+ stem: ἀφρικανικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: African
+-lexeme
+ lex: ἀψηλός
+ stem: ἀψηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: not high
+-lexeme
+ lex: ἁλιευτικός
+ stem: ἁλιευτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἁλμυρός
+ stem: ἁλμυρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἁμαρτωλός
+ stem: ἁμαρτωλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: sinful, sinner
+-lexeme
+ lex: ἁπαλός
+ stem: ἁπαλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἁπλοϊκός
+ stem: ἁπλοϊκ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἁρμονικός
+ stem: ἁρμονικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: harmonious
+-lexeme
+ lex: ἐαρινός
+ stem: ἐαριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐδικός
+ stem: ἐδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: own
+-lexeme
+ lex: ἐθελοντός
+ stem: ἐθελοντ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐθνικός
+ stem: ἐθνικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: national
+-lexeme
+ lex: ἐκκλησιαστικός
+ stem: ἐκκλησιαστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: church
+-lexeme
+ lex: ἐκλεκτός
+ stem: ἐκλεκτ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐκπληκτικός
+ stem: ἐκπληκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐκφραστικός
+ stem: ἐκφραστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: expressive
+-lexeme
+ lex: ἐλαφρός
+ stem: ἐλαφρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: light
+-lexeme
+ lex: ἐλεεινός
+ stem: ἐλεειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐμπειρικός
+ stem: ἐμπειρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐμπιστευτικός
+ stem: ἐμπιστευτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐμπορικός
+ stem: ἐμπορικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐνοριακός
+ stem: ἐνοριακ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐξοχικός
+ stem: ἐξοχικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: outer
+-lexeme
+ lex: ἐξωτερικός
+ stem: ἐξωτερικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: outer
+-lexeme
+ lex: ἐπαισθητός
+ stem: ἐπαισθητ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐπιβλητικός
+ stem: ἐπιβλητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: imposing
+-lexeme
+ lex: ἐπιδεκτικός
+ stem: ἐπιδεκτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐπιτακτικός
+ stem: ἐπιτακτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: necessary
+-lexeme
+ lex: ἐπιφυλακτικός
+ stem: ἐπιφυλακτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐραστός
+ stem: ἐραστ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐργατικός
+ stem: ἐργατικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: working
+-lexeme
+ lex: ἐρημικός
+ stem: ἐρημικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐρυθρός
+ stem: ἐρυθρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: red
+-lexeme
+ lex: ἐρωτικός
+ stem: ἐρωτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐσωτερικός
+ stem: ἐσωτερικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐταστικός
+ stem: ἐταστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἐχθρικός
+ stem: ἐχθρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: unfriendly
+-lexeme
+ lex: ἑλκυστικός
+ stem: ἑλκυστικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἑλληνικός
+ stem: ἑλληνικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Greek
+-lexeme
+ lex: ἑσπερινός
+ stem: ἑσπεριν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: evening
+-lexeme
+ lex: ἑωθινός
+ stem: ἑωθιν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἠθικός
+ stem: ἠθικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἠλεκτρικός
+ stem: ἠλεκτρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: electrical
+-lexeme
+ lex: ἠχηρός
+ stem: ἠχηρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: loud
+-lexeme
+ lex: ἡδονικός
+ stem: ἡδονικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: ideal
+-lexeme
+ lex: ἡρωικός
+ stem: ἡρωικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: heroic
+-lexeme
+ lex: ἰατρικός
+ stem: ἰατρικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἰδικός
+ stem: ἰδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἰνδικός
+ stem: ἰνδικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἰσχνός
+ stem: ἰσχν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἰσχυρός
+ stem: ἰσχυρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: strong
+-lexeme
+ lex: ἰταλικός
+ stem: ἰταλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: Italian
+-lexeme
+ lex: ἱερατικός
+ stem: ἱερατικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ἱερός
+ stem: ἱερ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: holy
+-lexeme
+ lex: ἱκανός
+ stem: ἱκαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: sufficient
+-lexeme
+ lex: ἱλαρός
+ stem: ἱλαρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: cheerful
+-lexeme
+ lex: ἱστορικός
+ stem: ἱστορικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: historical
+-lexeme
+ lex: ὀρεινός
+ stem: ὀρειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: mountain
+-lexeme
+ lex: ὀρθός
+ stem: ὀρθ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: straight
+-lexeme
+ lex: ὀρφανός
+ stem: ὀρφαν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὀχληρός
+ stem: ὀχληρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὁμαλός
+ stem: ὁμαλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὁρατός
+ stem: ὁρατ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: visible
+-lexeme
+ lex: ὁρμητικός
+ stem: ὁρμητικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὑγειονομικός
+ stem: ὑγειονομικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὑγιεινός
+ stem: ὑγιειν.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: healthy
+-lexeme
+ lex: ὑγρός
+ stem: ὑγρ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: humid
+-lexeme
+ lex: ὑλικός
+ stem: ὑλικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: material
+-lexeme
+ lex: ὑπερβολικός
+ stem: ὑπερβολικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὑπερφυσικός
+ stem: ὑπερφυσικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: supernatural
+-lexeme
+ lex: ὑπνηλός
+ stem: ὑπνηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὑποτακτικός
+ stem: ὑποτακτικ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὑπουργός
+ stem: ὑπουργ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὑψηλός
+ stem: ὑψηλ.
+ gramm: ADJ
+ paradigm: adj_os1
+ transl_en: 
+-lexeme
+ lex: ὠχρός
+ stem: ὠχρ.
+ gramm: ADJ
+ paradigm: adj_os2
+ transl_en: pale
