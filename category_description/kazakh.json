@@ -1,0 +1,40 @@
+[
+    {"paradigms": ["N-soft", "N-hard"],
+    "categories": [
+    {"name": "1",
+     "values": ["ins", "nom", "dat", "gen", "acc", "abl", "loc"]
+     },
+     {"name": "5",
+     "values": ["sg", "pl"]
+     },
+     {"name": "3",
+     "values": ["1sg", "2sg", "1pl", "2pl"]
+     },
+     {"name": "6",
+     "values": ["poss.2", "poss.3", "poss.1", "poss.2.formal"]}
+    ]
+    },
+    {"paradigms": ["N-pers-hard", "N-pers-soft"],
+    "categories": [{"name": "3",
+     "values": ["1sg", "2sg", "1pl", "2pl"]}]
+     },
+     {
+     "paradigms": ["V-mood-hard", "V-mood-soft"],
+     "categories": [
+     {"name": "7",
+     "values": ["1", "2", "3"]},
+     {"name": "5",
+     "values": ["sg", "pl"]
+     },
+     {"name": "4",
+     "values": ["imper", "indic", "sbjv", "inf", "opt1", "opt2"]
+     },
+    {"name": "2",
+     "values": ["pst.evid", "fut.prob", "pst.hab", "pst", "fut", "prosp", "pst.dir", "prs"]
+     },
+     {"name": "6",
+     "values": ["poss.2", "poss.3", "poss.1", "poss.2.formal"]},
+     {"name": "1",
+     "values": ["ins", "nom", "dat", "gen", "acc", "abl", "loc"]
+     }]}
+]

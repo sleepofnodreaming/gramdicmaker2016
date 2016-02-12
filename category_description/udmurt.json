@@ -1,0 +1,35 @@
+[
+    {"paradigms": ["Noun-case", "Noun-num-ija", "connect_verbs-I-soft", "Noun-num-vowel", "Noun-num-j", "connect_verbs-II", "Noun-num-soft", "connect_verbs-I", "connect_adjectives", "Noun-num-consonant"],
+    "categories": [
+    {"name": "1",
+     "values": ["nom", "acc", "gen", "abl", "dat", "ins", "car", "adv", "ine", "ill", "el", "egr", "term", "prol", "app"]
+     }]
+     },
+     {"paradigms": ["Noun-num-ija", "Noun-num-vowel", "Noun-num-j", "connect_verbs-II", "Noun-num-soft", "connect_verbs-I", "Noun-num-consonant"],
+     "categories": [
+     {"name": "3",
+     "values": ["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"]
+     }
+    ]},
+    {"paradigms": ["Noun-num-ija", "connect_verbs-I-soft", "Noun-num-vowel", "Noun-num-j", "connect_verbs-II", "Noun-num-soft", "connect_verbs-I", "connect_adjectives", "Noun-num-consonant"],
+     "categories": [
+     {"name": "5",
+     "values": ["sg", "pl"]
+     }
+    ]},
+    {"paradigms": ["connect_verbs-I-soft", "connect_verbs-II", "connect_verbs-I"],
+     "categories": [
+     {"name": "3",
+     "values": ["1", "2", "3"]
+     },
+     {"name": "3",
+     "values": ["pres", "fut", "past", "evid", "ptcp", "neg", "cond", "inf"]
+     },
+     {"name": "3",
+     "values": ["pass", "act"]
+     },
+     {"name": "3",
+     "values": ["preced", "simult", "result"]
+     }
+    ]}
+]

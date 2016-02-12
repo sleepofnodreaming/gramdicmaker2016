@@ -1,0 +1,14 @@
+[
+    {"paradigms": ["adj_os1"],
+    "categories": [
+    {"name": "1",
+     "values": ["nom", "dat", "gen", "acc", "voc"]
+     },
+     {"name": "5",
+     "values": ["sg", "pl"]
+     },
+     {"name": "3",
+     "values": ["m", "f", "n"]
+     }
+    ]}
+]

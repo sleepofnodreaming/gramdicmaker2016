@@ -1,0 +1,17 @@
+[
+    {"paradigms": ["adj-1-2-a", "adj-3-2", "adj-3-1", "adj-2-1-a", "adj-2-2-a", "adj-1-1-a", "adj-1-1-b", "adj-2-1", "adj-1-1", "adj-2-2", "adj-2-3", "adj-1-5", "adj-1-4", "adj-1-3", "adj-1-2", "adj-1-4-a"],
+    "categories": [
+    {"name": "1",
+     "values": ["nom", "abl", "abl2", "gen_dat", "acc"]
+     },
+     {"name": "5",
+     "values": ["sg", "pl"]
+     },
+     {"name": "3",
+     "values": ["m", "f"]
+     },
+     {"name": "0",
+     "values": ["def", "indef"]
+     }
+    ]}
+]
