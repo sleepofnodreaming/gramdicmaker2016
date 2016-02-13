@@ -483,28 +483,28 @@ class DraftCleaner(object):
         return new_dic
 
     def _train_svm(self, cVal, kernelVal, exclusion, ablation_features=()):
-        data, targets = self.transformer.get_training_data_matrix(normalize=True, ablation_features=ablation_features,
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=True, ablation_features=ablation_features,
                                                                   toExclude=set(exclusion))
         classifier = svm.SVC(C=cVal, kernel=kernelVal)
         classifier.fit(data, targets)
         return classifier
 
     def _train_linear(self, exclusion, ablation_features=()):
-        data, targets = self.transformer.get_training_data_matrix(normalize=False, ablation_features=ablation_features,
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=False, ablation_features=ablation_features,
                                                                   toExclude=set(exclusion))
         classifier = linear_model.LinearRegression()
         classifier.fit(data.toarray(), targets)
         return classifier
 
     def _train_perceptron(self, exclusion, ablation_features=()):
-        data, targets = self.transformer.get_training_data_matrix(normalize=False, ablation_features=ablation_features,
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=False, ablation_features=ablation_features,
                                                                   toExclude=set(exclusion))
         classifier = linear_model.Perceptron()
         classifier.fit(data.toarray(), targets)
         return classifier
 
     def _train_forest(self, exclusion, ablation_features=()):
-        data, targets = self.transformer.get_training_data_matrix(normalize=True, ablation_features=ablation_features,
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=True, ablation_features=ablation_features,
                                                                   toExclude=set(exclusion))
         classifier = RandomForestClassifier(n_estimators=10)
         classifier.fit(data.toarray(), targets)
@@ -516,7 +516,7 @@ class DraftCleaner(object):
             # this is a little shitty piece
             # converting the data to the appropriate format as the ML module requires different data format
             dataML = dicCollectorObj.get_paradigm_to_ml(pName)
-            featureMatrix = self.transformer.get_processing_data_matrix(dataML, dicCollectorObj, categories, normalize, ablation_features)
+            headlines, featureMatrix = self.transformer.get_processing_data_matrix(dataML, dicCollectorObj, categories, normalize, ablation_features)
             results = classifierTrained.predict(featureMatrix.toarray())
             clearedParadigm = [dataML[i]["lex"] for i in xrange(len(results)) if int(results[i]) > 0] # todo rewrite value check
             newDic[pName] = clearedParadigm
@@ -662,11 +662,19 @@ class DataTransformer(object):
         dic = {funcName: self.features[funcName](lexeme) for funcName in self.features if funcName not in ablation_features}
         return dic
 
+    # def _dic_list_to_matrix(self, processedData, normalize):
+    #     vectorizer = DictVectorizer()
+    #     if normalize:
+    #         return preprocessing.normalize(vectorizer.fit_transform(processedData), norm='l2')
+    #     return vectorizer.fit_transform(processedData)
+
     def _dic_list_to_matrix(self, processedData, normalize):
         vectorizer = DictVectorizer()
         if normalize:
-            return preprocessing.normalize(vectorizer.fit_transform(processedData), norm='l2')
-        return vectorizer.fit_transform(processedData)
+            res = preprocessing.normalize(vectorizer.fit_transform(processedData), norm='l2')
+        else:
+            res = vectorizer.fit_transform(processedData)
+        return vectorizer.get_feature_names(), res
 
     def get_training_data_matrix(self, normalize, ablation_features=(), toExclude=()):
         """ Process the training data.
@@ -675,6 +683,7 @@ class DataTransformer(object):
         — toExclude: a list/tuple of paradigms that cannot be used in the training data (for cross-validation);
         — ablate: a list of features to exclude during the ablation study.
         Return:
+        - headlines;
         - a training sparse scipy matrix;
         - a list of targets.
 
@@ -701,7 +710,9 @@ class DataTransformer(object):
                 sampleEval = FeatureExtractor.is_positive_example(lexeme)
                 targets.append(sampleEval)
 
-            return self._dic_list_to_matrix(processedData, normalize), targets
+            headlines, matrix = self._dic_list_to_matrix(processedData, normalize)
+
+            return headlines, matrix, targets
 
     def get_processing_data_matrix(self, data, dataCollectorObject, categoryDescription, normalize, ablation_features):
         """ Args:
