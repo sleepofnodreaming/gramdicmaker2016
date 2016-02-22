@@ -1,5 +1,7 @@
 from grdicmaker import DataTransformer
 from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.feature_selection import RFE
+from sklearn import svm
 import numpy as np
 
 
@@ -38,3 +40,28 @@ def estimate_random_forest():
     print 'Feature\tin full\tin thresholded'
     for feature_name in dict_full:
         print '%s\t%f\t%f' % (feature_name, dict_full[feature_name], dict_thr[feature_name])
+
+def rank(training_set, paradigm_lengths, category_description):
+
+    transfomer = DataTransformer(training_set, paradigm_lengths, category_description)
+    headlines, matrix, targets = transfomer.get_training_data_matrix(normalize=True)
+    matrix = matrix.toarray()
+    estimator = svm.SVC(C=1, kernel='linear')
+    selector = RFE(estimator, 1, step=1)
+    selector = selector.fit(matrix, targets)
+    for i in range(len(headlines)):
+        print headlines[i], selector.ranking_[i]
+
+
+if __name__ == '__main__':
+    rank(
+        "training_sets/kz/training_data_thresholded.json",
+        "training_sets/kz/paradigm_lengths.json",
+        "category_description/kazakh.json"
+    )
+    print
+    rank(
+        "training_sets/kz/training_data_full.json",
+        "training_sets/kz/paradigm_lengths.json",
+        "category_description/kazakh.json"
+    )
