@@ -3,25 +3,31 @@
 
 import codecs
 import json
+import logging
 import os
 import re
+import time
 import sys
-
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.ensemble import RandomForestClassifier
-from sklearn import linear_model
-from sklearn import svm, preprocessing
 
 from automaton import FlexAutomaton
 from feature_extractors import Thresholds, FeatureExtractor
 from collections import Counter
-
-
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import linear_model
+from sklearn import svm, preprocessing
 from uniparser.grammar import Grammar  # and this is the module from the parser
 
 
+logging.basicConfig(level=logging.DEBUG)
+moduleLogger = logging.getLogger(__name__)
+msgHandler = logging.StreamHandler(stream=sys.stderr)
+moduleLogger.addHandler(msgHandler)
+
+
 class _PrefixFinder(FlexAutomaton):
-    """ An automaton to extract a set of prefixes for a paradigm's inflexion.
+    """
+    An automaton to extract a set of prefixes for a paradigm's inflexion.
     >>> obj = _PrefixFinder()
     >>> obj.add(u'.a')
     >>> obj.add(u'.aba')
@@ -31,7 +37,7 @@ class _PrefixFinder(FlexAutomaton):
     >>> sorted(list(obj.check(u'.aba')))
     [u'.a', u'.ba']
     """
-    _replace = re.compile(ur'[\.#]+', flags = re.U|re.I)
+    _replace = re.compile(ur'[\.#]+', flags=re.U | re.I)
 
     def __init__(self):
         PREFIX_AUTOMATON_MARKER = u'#'
@@ -43,26 +49,28 @@ class _PrefixFinder(FlexAutomaton):
 
         for flex in paradigmObject.flex:
             flexText = flex.comparison_pattern()
-            if flexText != self.marker: # todo find out what to do if an inflection is empty.
-            #  In fact, this is useless as a pattern here is not a dot but a number sign
+            if flexText != self.marker:  # todo find out what to do if an inflection is empty.
+                #  In fact, this is useless as a pattern here is not a dot but a number sign
                 self.add(flexText)
                 # self.fCounter += 1
 
     def add(self, flex):
-        """ Add all the inflection options to the data structure. As we propose that some dots missing,
+        """
+        Add all the inflection options to the data structure. As we propose that some dots missing,
         all the options of dot positions should be added.
 
         """
         patterns = [u'%s', u'%s.', u'.%s', u'.%s.']
         for ptrn in patterns:
-            flexFormatted = self._replace.sub(self.marker, ptrn % flex)   # in a pattern flex,
+            flexFormatted = self._replace.sub(self.marker, ptrn % flex)  # in a pattern flex,
             # add missing dots and replace them all with a number sign
-            self.contents[flexFormatted] = flex   # inside the keys, a number sign only
+            self.contents[flexFormatted] = flex  # inside the keys, a number sign only
             # is used as an empty transition marker. However, values look like a normal flex.
             FlexAutomaton.add(self, flexFormatted)
 
     def check(self, flex):
-        """ Given a flex, return a set of possible prefixes.
+        """
+        Given a flex, return a set of possible prefixes.
 
         """
         options = self.parse(flex)
@@ -79,7 +87,6 @@ class _PrefixFinder(FlexAutomaton):
 
 
 class _ParadigmFeaturedAutomaton(FlexAutomaton):
-
     def __init__(self, agglutinative):
 
         MARKER_DOT = u'.'
@@ -87,7 +94,7 @@ class _ParadigmFeaturedAutomaton(FlexAutomaton):
 
         self.paradigms = {}
         self.pMetrics = {}
-        self.prefixes = {} # inflection -> set(subsequences). ATTENTION: this parameter is set from the outside!
+        self.prefixes = {}  # inflection -> set(subsequences). ATTENTION: this parameter is set from the outside!
         self.nullFlex = {}
 
         self.lens = {}
@@ -109,15 +116,15 @@ class _ParadigmFeaturedAutomaton(FlexAutomaton):
             flexTypes.add(flexText)
             grammar = flex.gramm
 
-            if flexText != self.marker: # this case should be processed separately;
-            # otherwise, all the words from a word list are added to the dic
+            if flexText != self.marker:  # this case should be processed separately;
+                # otherwise, all the words from a word list are added to the dic
                 self.add(flexText)
             else:
                 if paradigmObj.name not in self.nullFlex:
                     self.nullFlex[paradigmObj.name] = []
                 self.nullFlex[paradigmObj.name].append(grammar)
 
-            if flexText not in self.paradigms: # flex -> {paradigm names -> [grammars]}
+            if flexText not in self.paradigms:  # flex -> {paradigm names -> [grammars]}
                 self.paradigms[flexText] = {}
             if paradigmObj.name not in self.paradigms[flexText]:
                 self.paradigms[flexText][paradigmObj.name] = []
@@ -126,7 +133,8 @@ class _ParadigmFeaturedAutomaton(FlexAutomaton):
         self.pMetrics[paradigmObj.name] = len(flexTypes)
 
     def parse(self, token):
-        """ For a token given, get a list of options (inflection, stem) possible.
+        """
+        For a token given, get a list of options (inflection, stem) possible.
 
         """
         options = FlexAutomaton.parse(self, token)
@@ -142,16 +150,15 @@ class _ParadigmFeaturedAutomaton(FlexAutomaton):
 
 
 class DictionaryCollector(object):
-
-    def __init__(self, paradigmPath, conversionPath = u'', relevantParadigms=None, agglutinative=True):
-        """ Prepare grammar for work. Args:
-        - paradigmPath: a path to a file containing a description of paradigms.
-        - conversionPath: a path to a file containing a description of conversions. The default value is an empty string (no conversion).
-        - relevantParadigms: a list of paradigm names should be processed if found, or None. The default is None (all paradigms will be processed).
-        - agglutinative: a boolean value - is a language processed an agglutinative one? Is not obligatory, but provides more precise tuning. The default is True.
+    def __init__(self, paradigmPath, conversionPath=u'', relevantParadigms=None, agglutinative=True):
+        """
+        :param paradigmPath: a path to a file containing paradigm description in the UniParser format.
+        :param conversionPath: a path to a file describing stem conversions in the UniParser format.
+        :param relevantParadigms: a lins of paradigm names to process (according to the grammar used.
+        :param agglutinative: a boolean saying whether a language is agglutinative.
+        :return: -
 
         """
-
         self.dics = {}
 
         self.conversions = {}
@@ -159,10 +166,19 @@ class DictionaryCollector(object):
 
         self.prefixes = {}  # { flex -> set(its prefixes) }
 
-        g =  Grammar()
-        print g.load_paradigms(paradigmPath, relevantParadigms), u'paradigms loaded.'
-        if conversionPath:
-            print g.load_stem_conversions(conversionPath), u'conversions loaded.'
+        g = Grammar()
+
+        currTime = time.clock()
+        convNumber = g.load_stem_conversions(conversionPath)
+        moduleLogger.info('%d conversions loaded. Time consumed: %.4f seconds.', convNumber, time.clock() - currTime)
+
+        currTime = time.clock()
+        paradigmNumber = g.load_paradigms(paradigmPath, relevantParadigms)
+        if paradigmNumber:
+            moduleLogger.info('%d paradigms loaded. Time consumed: %.4f seconds.', paradigmNumber, time.clock() - currTime)
+        else:
+            moduleLogger.critical('%d paradigms loaded.', paradigmNumber)
+            raise IOError()
         g.compile_all()
 
         self.automaton = _ParadigmFeaturedAutomaton(agglutinative)
@@ -179,15 +195,15 @@ class DictionaryCollector(object):
         self._list_prefixes(g, pFinder)
         self.automaton.prefixes = self.prefixes
         self.conversions = g.stemConversions
-        print "All paradigms processed."
+        moduleLogger.info("All paradigms processed.")
 
     def _list_prefixes(self, grammar, prefixAutomaton):
         for p in grammar.paradigms.values():
             self._list_paradigm_prefixes(p, prefixAutomaton)
 
-
     def _list_paradigm_prefixes(self, paradigmObject, prefixAutomaton):
-        """ For each pair (flex, paradigm) add a set of subsequences of a flex in the same paradigm.
+        """
+        For each pair (flex, paradigm) add a set of subsequences of a flex in the same paradigm.
 
         """
         for flex in paradigmObject.flex:
@@ -197,12 +213,14 @@ class DictionaryCollector(object):
                 self.prefixes[flex] = set()
             self.prefixes[flex] |= prefixes
 
-    def _get_parse_options(self, wordform):
-        """ Given a word form, return all the combinations (flex, stem) possible.
-         Args: word form (string);
-         Return: a list of tuples (flex_string, stem_string).
 
-         """
+    def _get_parse_options(self, wordform):
+        """
+        Get all the word form's parsing options with the use of the inner automaton.
+        :param wordform: unicode string;
+        :return: all the combinations (flex, stem) possible.
+
+        """
         return self.automaton.parse(wordform)
 
     def _put_wordform_to_storage(self, whereToAddParadigms, whereToAddStems, paradigmName, stem, flex, freq):
@@ -214,19 +232,20 @@ class DictionaryCollector(object):
         whereToAddStems[stem][flex] = freq
 
     def _process_word_form(self, whereToAddParadigms, whereToAddStems, wordform, freq):
-        """ Get all the option for a word form and put them into a dic.
-        Args:
-        - whereToAddParadigms: {paradigm -> [stems]}
-        - whereToAddStems: {stem -> {flex -> freq}}
-        - wordform: a token to parse;
-        - freq: token's frequency in a corpora.
+        """
+        Get all the option for a word form and put them into a dic.
+        :param whereToAddParadigms: {paradigm -> [stems]}
+        :param whereToAddStems: {stem -> {flex -> freq}}
+        :param wordform: a token to parse;
+        :param freq: token's frequency in a corpora.
+        :return: -
 
         """
         options = self._get_parse_options(wordform)
         for flex, stem in options:
             if stem != self.automaton.marker:
                 paradigms = self.automaton.paradigms.get(flex, {})
-                for paradigmName in paradigms: # in: {paradigm_name -> [grammar for flex]}
+                for paradigmName in paradigms:  # in: {paradigm_name -> [grammar for flex]}
                     self._put_wordform_to_storage(whereToAddParadigms, whereToAddStems, paradigmName, stem, flex, freq)
 
     def _add_null_flex_word_forms(self, whereToAddParadigms, whereToAddStems, fd):
@@ -235,7 +254,8 @@ class DictionaryCollector(object):
             for paradigm in self.automaton.nullFlex:
                 for stemOption in stems:
                     if paradigm in whereToAddParadigms and stemOption in whereToAddParadigms[paradigm]:
-                        self._put_wordform_to_storage(whereToAddParadigms, whereToAddStems, paradigm, stemOption, self.automaton.marker, freq)
+                        self._put_wordform_to_storage(whereToAddParadigms, whereToAddStems, paradigm, stemOption,
+                                                      self.automaton.marker, freq)
 
     def _flatten_stem_list(self, stemList):
         newStemsetList = []
@@ -249,24 +269,25 @@ class DictionaryCollector(object):
         return newStemsetList
 
     def _revise_paradigm(self, paradigmLex, paradigmName):
-        """ Given a list of paradigm's stems and a paradigm's name,
+        """
+        Given a list of paradigm's stems and a paradigm's name,
         compile a list of different stems per lexeme.
 
         """
         convLink = self.conversionLinks.get(paradigmName, None)
         if convLink:
-            stems = [[[stem]] for stem in paradigmLex] # conversion base
+            stems = [[[stem]] for stem in paradigmLex]  # conversion base
             for conv in convLink:
                 convObj = self.conversions[conv]
                 for s in stems:
                     convObj.convert(s)
             return set(self._flatten_stem_list(stems))
         # just put each lexeme into an array
-        return set([(stem, ) for stem in paradigmLex])
-
+        return set([(stem,) for stem in paradigmLex])
 
     def _merge_lexemes(self, dataCollected):
-        """ Convert a dic dataCollected ({paradigm_name -> stem list}) to {paradigm name -> list of tuples of lexeme's stems}.
+        """
+        Convert a dic dataCollected ({paradigm_name -> stem list}) to {paradigm name -> list of tuples of lexeme's stems}.
 
         """
         for paradigmName in dataCollected:
@@ -282,51 +303,61 @@ class DictionaryCollector(object):
                        if pName in self.automaton.paradigms[flex]} for stem in lexeme}
 
     def get_paradigm_to_ml(self, pName):
-        """ Convert paradigm's data to the format acceptable for the feature extractor.
-        Arg:
-        - pName: a name of a paradigm should be converted.
-        Return:
-        a list representing the converted paradigm.
-
         """
+        Convert paradigm's data to the format acceptable for the feature extractor.
+        :param pName: a name of a paradigm should be converted.
+        :return: a list representing the converted paradigm.
+        """
+        if pName not in self.dics:
+            raise ValueError("A paradigm you address is not found.")
         pDataNew = []
         for lexeme in self.dics[pName]:
-
             lexeme = {"lex": self._add_missing_data(lexeme, pName), "paradigm": pName}
             pDataNew.append(lexeme)
         return pDataNew
 
     def get_paradigm(self, pName):
-        """ Convert paradigm's data to the format used in output jsons.
-        Arg:
-        - pName: a name of a paradigm should be converted.
-        Return:
-        a list representing the converted paradigm.
+        """
+        Convert paradigm's data to the format used in output jsons.
+        :param pName: a name of a paradigm should be converted.
+        :return: a list representing the converted paradigm.
 
         """
         return [i["lex"] for i in self.get_paradigm_to_ml(pName)]
 
-
-    # def biggest_paradigm_heuristic(self):
-    #     keys = self.dics.keys() # paradigm names
-    #     for pName in self.dics:
-    #         for stemTuple in self.dics[pName]:
-    #             comparisonLex = self._add_missing_data(stemTuple, pName)
-    #             for key in keys:
-    #                 if key != pName and stemTuple in self.dics[key]:
-    #                     fullLexKey = self._add_missing_data(stemTuple, key)
-    #                     if len(list(Thresholds.iterate_through_flex(fullLexKey))) < len(list(Thresholds.iterate_through_flex(comparisonLex))):
-    #                         self.dics[key].remove(stemTuple)
+    def __getitem__(self, pName):
+        """
+        :param pName: a name of a paradigm to get.
+        :return: a list of lexemes.
+        """
+        return self.get_paradigm(pName)
 
 
-
-    def process_freq_dist(self, fd):
-        """ Parse all the words in a frequency distribution and put them to an inner dict.
-        Args:
-        - fd: dict or Counter object.
+    def __iter__(self):
+        """
+        Iterate over paradigm names in the storage.
 
         """
+        for paradigmName in self.dics:
+            yield paradigmName
 
+    def __contains__(self, item):
+        """
+        Check whether a paradigm in the dictionary.
+        :param item: paradigm name;
+        :return: a boolean.
+
+        """
+        return item in self.dics
+
+    def process_freq_dist(self, fd):
+        """
+        Parse all the words in a frequency distribution and put them to a dict
+        (available later through get_paradigm_to_ml() and get_paradigm() methods).
+        :param fd: dict object { word form: frequency }.
+        :return: -
+
+        """
         pToStemDataCollected = {}  # {paradigm -> [stems]}
         stemToFlexDataCollected = {}  # {stem -> {flex -> freq}}
         for wf, freq in fd.items():
@@ -337,42 +368,27 @@ class DictionaryCollector(object):
         self.dics = pToStemDataCollected
 
     def process_word_list(self, wordList):
-        """ Parse all the words in a word list and put them to an inner dict.
-        Args:
-        - wordList: a list of corpus' tokens.
+        """
+        Parse all the words in a list and put them to a dict
+        (available later through get_paradigm_to_ml() and get_paradigm() methods).
+        :param wordList: a list of corpus' tokens.
+        :return: -
 
         """
         fd = Counter(wordList)
         self.process_freq_dist(fd)
 
     def export_paradigm_lengths(self, path):
-        """ Save the data about the lengths of paradigms processed (in flex) to a file.
-        Args:
-        - path: a path to a file to export the data.
+        """
+        Save the data about the lengths of paradigms processed (in flex) to a file.
+        :param path: a path to a file to export the data.
+        :return: -
 
         """
         DataExportManager.export_to_json(self.automaton.lens, path)
 
 
-# class _DataCollectorAuxilaries(object):
-#     """ These is a collection of funcs that could be in DictionaryCollector class
-#     but are placed here as are used by a developer only.
-#
-#     """
-#     @staticmethod
-#     def count_paradigms_per_pseudolex(collectorStorage):
-#         allLex = {}
-#         for pName in collectorStorage.dics:
-#             for lexStems in collectorStorage.dics[pName]:
-#                 if lexStems not in allLex:
-#                     allLex[lexStems] = 0
-#                 allLex[lexStems] += 1
-#
-#         return float(sum(allLex.values())) / len(allLex)
-
-
 class DataExportManager(object):
-
     @staticmethod
     def _form_filename(extension, paradigm, dir):
         paradigm = paradigm.replace(u'/', u'--')
@@ -380,10 +396,11 @@ class DataExportManager(object):
 
     @classmethod
     def export_to_json(cls, dic, path):
-        """ Export a dictionary to a json file specified.
-        Args:
-        - dic: a dict to save to a file;
-        - dir: a path to a file.
+        """
+        Export a dictionary to a json file specified.
+        :param dic: a dict to save to a file;
+        :param path: a path to a file.
+        :return: -
 
         """
         text = json.dumps(dic, ensure_ascii=False, sort_keys=True, indent=1)
@@ -392,24 +409,23 @@ class DataExportManager(object):
 
     @classmethod
     def export_to_jsons(cls, storage, dir):
-        """ Export a dictionary collected to json files in a directory specified.
+        """
+        Export a dictionary collected to json files in a directory specified.
         All the files are going to be rewritten if they exist!
-        Args:
-        - storage: a dict or a DictionaryCollector object;
-        - dir: a path to a directory.
+        A name of a file is a name of a paradigm.
+        :param storage: a dict or a DictionaryCollector object;
+        :param dir: a path to a directory. If incorrect, IOError raised.
+        :return: -
 
         """
-        assert os.path.isdir(dir)
-        assert isinstance(storage, dict) or isinstance(storage, DictionaryCollector)
-        extension = u'json'
-        if isinstance(storage, DictionaryCollector):
-            for paradigm in storage.dics:
-                path = cls._form_filename(extension, paradigm, dir)
-                cls.export_to_json(storage.get_paradigm(paradigm), path)
-        else:
-            for paradigm in storage:
-                path = cls._form_filename(u'json', paradigm, dir)
-                cls.export_to_json(storage[paradigm], path)
+        if not os.path.isdir(dir):
+            raise IOError()
+        if not (isinstance(storage, dict) or isinstance(storage, DictionaryCollector)):
+            raise ValueError()
+
+        for paradigm in storage:
+            path = cls._form_filename(u'json', paradigm, dir)
+            cls.export_to_json(storage[paradigm], path)
 
     @classmethod
     def _convert_stem_data(cls, stemData):
@@ -435,26 +451,22 @@ class DataExportManager(object):
 
     @classmethod
     def export_to_txt(cls, storage, dir):
-        """ Export a dictionary collected to plain text files in a directory specified.
+        """
+        Export a dictionary collected to plain text files in a directory specified.
         The frequencies will be saved, too. All the files are going to be rewritten if they exist!
-        Args:
-        - storage: a dict or a DictionaryCollector object;
-        - dir: a path to a directory.
+        :param storage: a dict or a DictionaryCollector object;
+        :param dir: a path to a directory.
+        :return: -
 
         """
-        assert os.path.isdir(dir)
-        assert isinstance(storage, dict) or isinstance(storage, DictionaryCollector)
-        extension = u'txt'
-        if isinstance(storage, DictionaryCollector):
-            for paradigm in storage.dics:
-                pathFinal = cls._form_filename(extension, paradigm, dir)
-                pContents = storage.get_paradigm(paradigm)
-                cls._export(pContents, pathFinal)
-        else:
-            for paradigm in storage:
-                path = cls._form_filename(extension, paradigm, dir)
-                cls.export_to_json(storage[paradigm], path)
+        if not os.path.isdir(dir):
+            raise IOError()
+        if not (isinstance(storage, dict) or isinstance(storage, DictionaryCollector)):
+            raise ValueError()
 
+        for paradigm in storage:
+            path = cls._form_filename(u'txt', paradigm, dir)
+            cls.export_to_json(storage[paradigm], path)
 
 
 class DraftCleaner(object):
@@ -462,6 +474,7 @@ class DraftCleaner(object):
     Requires an object initialization to use methods.
 
     """
+
     def __init__(self, pathToTraining, pathToParadigmLengths, pathToCategories):
         self.transformer = DataTransformer(pathToTraining, pathToParadigmLengths, pathToCategories)
 
@@ -483,29 +496,33 @@ class DraftCleaner(object):
         return new_dic
 
     def _train_svm(self, cVal, kernelVal, exclusion, ablation_features=()):
-        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=True, ablation_features=ablation_features,
-                                                                  toExclude=set(exclusion))
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=True,
+                                                                             ablation_features=ablation_features,
+                                                                             toExclude=set(exclusion))
         classifier = svm.SVC(C=cVal, kernel=kernelVal)
         classifier.fit(data, targets)
         return classifier
 
     def _train_linear(self, exclusion, ablation_features=()):
-        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=False, ablation_features=ablation_features,
-                                                                  toExclude=set(exclusion))
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=False,
+                                                                             ablation_features=ablation_features,
+                                                                             toExclude=set(exclusion))
         classifier = linear_model.LinearRegression()
         classifier.fit(data.toarray(), targets)
         return classifier
 
     def _train_perceptron(self, exclusion, ablation_features=()):
-        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=False, ablation_features=ablation_features,
-                                                                  toExclude=set(exclusion))
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=False,
+                                                                             ablation_features=ablation_features,
+                                                                             toExclude=set(exclusion))
         classifier = linear_model.Perceptron()
         classifier.fit(data.toarray(), targets)
         return classifier
 
     def _train_forest(self, exclusion, ablation_features=()):
-        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=True, ablation_features=ablation_features,
-                                                                  toExclude=set(exclusion))
+        headlines, data, targets = self.transformer.get_training_data_matrix(normalize=True,
+                                                                             ablation_features=ablation_features,
+                                                                             toExclude=set(exclusion))
         classifier = RandomForestClassifier(n_estimators=10)
         classifier.fit(data.toarray(), targets)
         return classifier
@@ -516,9 +533,11 @@ class DraftCleaner(object):
             # this is a little shitty piece
             # converting the data to the appropriate format as the ML module requires different data format
             dataML = dicCollectorObj.get_paradigm_to_ml(pName)
-            headlines, featureMatrix = self.transformer.get_processing_data_matrix(dataML, dicCollectorObj, categories, normalize, ablation_features)
+            headlines, featureMatrix = self.transformer.get_processing_data_matrix(dataML, dicCollectorObj, categories,
+                                                                                   normalize, ablation_features)
             results = classifierTrained.predict(featureMatrix.toarray())
-            clearedParadigm = [dataML[i]["lex"] for i in xrange(len(results)) if int(results[i]) > 0] # todo rewrite value check
+            clearedParadigm = [dataML[i]["lex"] for i in xrange(len(results)) if
+                               int(results[i]) > 0]  # todo rewrite value check
             newDic[pName] = clearedParadigm
         return newDic
 
@@ -535,8 +554,9 @@ class DraftCleaner(object):
         """
         if not dicCollectorObj.dics:
             return None
-        trainedSVM = self._train_svm(1, 'rbf', exclusion, ablation) # classifier params are static but it may change
-        return self._classifier_clearing(dicCollectorObj, categories, trainedSVM, normalize=True, ablation_features=ablation)
+        trainedSVM = self._train_svm(1, 'rbf', exclusion, ablation)  # classifier params are static but it may change
+        return self._classifier_clearing(dicCollectorObj, categories, trainedSVM, normalize=True,
+                                         ablation_features=ablation)
 
     def forest_clearing(self, dicCollectorObj, categories, exclusion=(), ablation=()):
         """Apply Random Forest classification to the data of a dictionary collected.
@@ -546,7 +566,8 @@ class DraftCleaner(object):
         if not dicCollectorObj.dics:
             return None
         forest = self._train_forest(exclusion, ablation)
-        return self._classifier_clearing(dicCollectorObj, categories, forest, normalize=True, ablation_features=ablation)
+        return self._classifier_clearing(dicCollectorObj, categories, forest, normalize=True,
+                                         ablation_features=ablation)
 
     def linear_clearing(self, dicCollectorObj, categories, exclusion=(), ablation=()):
         """Apply Linear Regression classification to the data of a dictionary collected.
@@ -556,7 +577,8 @@ class DraftCleaner(object):
         if not dicCollectorObj.dics:
             return None
         linearModel = self._train_linear(exclusion, ablation)
-        return self._classifier_clearing(dicCollectorObj, categories, linearModel, normalize=False, ablation_features=ablation)
+        return self._classifier_clearing(dicCollectorObj, categories, linearModel, normalize=False,
+                                         ablation_features=ablation)
 
     def perceptron_clearing(self, dicCollectorObj, categories, exclusion=(), ablation=()):
         """Apply perceptron classification to the data of a dictionary collected.
@@ -566,7 +588,8 @@ class DraftCleaner(object):
         if not dicCollectorObj.dics:
             return None
         perceptron = self._train_perceptron(exclusion, ablation)
-        return self._classifier_clearing(dicCollectorObj, categories, perceptron, normalize=False, ablation_features=ablation)
+        return self._classifier_clearing(dicCollectorObj, categories, perceptron, normalize=False,
+                                         ablation_features=ablation)
 
 
 class DataTransformer(object):
@@ -582,6 +605,7 @@ class DataTransformer(object):
     9. 'category_entropy_variance': a variance of grammatical categories' length-normalized entropies.
 
     """
+
     def __init__(self, pathToTraining, pathToParadigmLengths, pathToCategories):
         """ Args:
         - pathToTraining: a path to the main training data;
@@ -596,16 +620,16 @@ class DataTransformer(object):
         self.categoryPath = pathToCategories
         # and this is a full feature set
         self.features = {
-                         'entropy': FeatureExtractor.entropy,
-                         'freq_proportion': FeatureExtractor.proportion_flex_token,
-                         'average_category_entropy': self._average_category_entropy,
-                         'min_category_entropy': self._min_category_entropy,
-                         'found_flex_part': self._part_of_found_flex,
-                         'found_gramm_part': self._part_of_found_gramm,
-                         'entropy_to_paradigm_length': self._entropy_to_paradigm_length,
-                         'number_of_one_value_categories': self._number_of_one_value_categories,
-                         'category_entropy_variance': self._category_entropy_variance
-                         }
+            'entropy': FeatureExtractor.entropy,
+            'freq_proportion': FeatureExtractor.proportion_flex_token,
+            'average_category_entropy': self._average_category_entropy,
+            'min_category_entropy': self._min_category_entropy,
+            'found_flex_part': self._part_of_found_flex,
+            'found_gramm_part': self._part_of_found_gramm,
+            'entropy_to_paradigm_length': self._entropy_to_paradigm_length,
+            'number_of_one_value_categories': self._number_of_one_value_categories,
+            'category_entropy_variance': self._category_entropy_variance
+        }
         # these are temporary data variables.
         self.pLengths = None
         self.categoryDescription = None
@@ -632,10 +656,10 @@ class DataTransformer(object):
 
     # ------ these are wrappers for the funcs requiring more arguments... -------
     def _average_category_entropy(self, lexeme):
-        return  FeatureExtractor.average_category_entropy(lexeme, self.categoryDescription)
+        return FeatureExtractor.average_category_entropy(lexeme, self.categoryDescription)
 
     def _min_category_entropy(self, lexeme):
-        return  FeatureExtractor.min_category_entropy(lexeme, self.categoryDescription)
+        return FeatureExtractor.min_category_entropy(lexeme, self.categoryDescription)
 
     def _part_of_found_flex(self, lexeme):
         return FeatureExtractor.part_of_found_flex(lexeme, self.pLengths)
@@ -651,6 +675,7 @@ class DataTransformer(object):
 
     def _category_entropy_variance(self, lexeme):
         return FeatureExtractor.category_entropy_variance(lexeme, self.categoryDescription)
+
     # --------------------------------------------------------------------------
 
     def _check_if_ablation_appropriate(self, ablation):
@@ -659,7 +684,8 @@ class DataTransformer(object):
                 raise KeyError('Invalid feature set required.')
 
     def _convert_lexeme_to_feature_dic(self, lexeme, ablation_features):
-        dic = {funcName: self.features[funcName](lexeme) for funcName in self.features if funcName not in ablation_features}
+        dic = {funcName: self.features[funcName](lexeme) for funcName in self.features if
+               funcName not in ablation_features}
         return dic
 
     # def _dic_list_to_matrix(self, processedData, normalize):
@@ -693,8 +719,8 @@ class DataTransformer(object):
         self._check_if_ablation_appropriate(ablation_features)
 
         # additional data initialization:
-        self._read_category_val_alternations(self.categoryPath) # self.categoryDescription
-        self._read_paradigm_lengths() # self.pLengths
+        self._read_category_val_alternations(self.categoryPath)  # self.categoryDescription
+        self._read_paradigm_lengths()  # self.pLengths
         # and this is a table maker itself
         with codecs.open(self.MLDataPath, 'r', 'utf-8-sig') as f:
             data = json.loads(f.read())
@@ -734,7 +760,6 @@ class DataTransformer(object):
 if __name__ == '__main__':
     import random
     import test_data_readers
-    import time
 
     testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh()
     fd = Counter(testWordforms)

@@ -1,4 +1,4 @@
-from grdicmaker import DataTransformer
+from grdicmaker_api import DataTransformer
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.feature_selection import RFE
 from sklearn import svm

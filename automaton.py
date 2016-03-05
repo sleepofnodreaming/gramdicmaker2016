@@ -139,9 +139,4 @@ class FFANode(object):
         return [(flex, self._to_stem(token, flex, indices)) for flex, indices in options]
 
 
-if __name__ == '__main__':
-    f = FlexAutomaton(empty=u'#')
-    f.add(u'#mj')
-    t = u'umj'
-    o = f.parse(t)
-    print o
+
