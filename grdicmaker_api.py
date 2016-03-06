@@ -299,9 +299,9 @@ class DictionaryCollector(object):
                               "gr": self.automaton.paradigms[flex][pName]} for flex in self.frequencies[stem]
                        if pName in self.automaton.paradigms[flex]} for stem in lexeme}
 
-    def get_paradigm_to_ml(self, pName):
+    def get_extended_paradigm(self, pName):
         """
-        Convert paradigm's data to the format acceptable for the feature extractor.
+        Convert paradigm's data to the extended format acceptable for the feature extractor.
         :param pName: a name of a paradigm should be converted.
         :return: a list representing the converted paradigm.
         """
@@ -320,7 +320,7 @@ class DictionaryCollector(object):
         :return: a list representing the converted paradigm.
 
         """
-        return [i["lex"] for i in self.get_paradigm_to_ml(pName)]
+        return [i["lex"] for i in self.get_extended_paradigm(pName)]
 
     def __getitem__(self, pName):
         """
@@ -529,7 +529,7 @@ class DraftCleaner(object):
         for pName in dicCollectorObj.dics:
             # this is a little shitty piece
             # converting the data to the appropriate format as the ML module requires different data format
-            dataML = dicCollectorObj.get_paradigm_to_ml(pName)
+            dataML = dicCollectorObj.get_extended_paradigm(pName)
             headlines, featureMatrix = self.transformer.get_processing_data_matrix(dataML, dicCollectorObj, categories,
                                                                                    normalize, ablation_features)
             results = classifierTrained.predict(featureMatrix.toarray())
@@ -777,7 +777,8 @@ if __name__ == '__main__':
     curr_time = time.clock()
     dc.process_freq_dist(fd)
     print "Time for N-soft: %f" % (time.clock() - curr_time)
-    DataExportManager.export_to_txt(dc, "trashbin")
+    DataExportManager.export_to_json(dc.get_extended_paradigm("N-soft"), "trashbin/ns.json")
+    # DataExportManager.export_to_txt(dc, "trashbin")
 
     # testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh_nouns()
     # dc = DictionaryCollector(paradigms, conv, agglutinative=True)
