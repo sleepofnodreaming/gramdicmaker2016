@@ -466,7 +466,7 @@ class DataExportManager(object):
 
         for paradigm in storage:
             path = cls._form_filename(u'txt', paradigm, dir)
-            cls.export_to_json(storage[paradigm], path)
+            cls._export(storage[paradigm], path)
 
 
 class DraftCleaner(object):
@@ -764,31 +764,32 @@ if __name__ == '__main__':
     testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh()
     fd = Counter(testWordforms)
 
-    dc = DictionaryCollector(paradigms, conv, agglutinative=True)
-
-    words_allowed = list(set(testWordforms))
-    for share in [0.25, 0.5, 0.75, 1]:
-        random.shuffle(words_allowed)
-        word_number = int(len(words_allowed) * share)
-        print "A corpus size: %d" % word_number
-        current_fd = {i: fd[i] for i in words_allowed[:word_number]}
-        curr_time = time.clock()
-        dc.process_freq_dist(current_fd)
-        print "Time: %f" % (time.clock() - curr_time)
+    # dc = DictionaryCollector(paradigms, conv, agglutinative=True)
+    #
+    # words_allowed = list(set(testWordforms))
+    # for share in [0.25, 0.5, 0.75, 1]:
+    #     random.shuffle(words_allowed)
+    #     word_number = int(len(words_allowed) * share)
+    #     print "A corpus size: %d" % word_number
+    #     current_fd = {i: fd[i] for i in words_allowed[:word_number]}
+    #     curr_time = time.clock()
+    #     dc.process_freq_dist(current_fd)
+    #     print "Time: %f" % (time.clock() - curr_time)
 
     dc = DictionaryCollector(paradigms, conv, relevantParadigms=["N-soft"], agglutinative=True)
     curr_time = time.clock()
     dc.process_freq_dist(fd)
     print "Time for N-soft: %f" % (time.clock() - curr_time)
+    DataExportManager.export_to_txt(dc, "trashbin")
 
-    testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh_nouns()
-    dc = DictionaryCollector(paradigms, conv, agglutinative=True)
-    curr_time = time.clock()
-    dc.process_freq_dist(fd)
-    print "Time for N: %f" % (time.clock() - curr_time)
-
-    testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh_verbs()
-    dc = DictionaryCollector(paradigms, conv, agglutinative=True)
-    curr_time = time.clock()
-    dc.process_freq_dist(fd)
-    print "Time for V: %f" % (time.clock() - curr_time)
+    # testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh_nouns()
+    # dc = DictionaryCollector(paradigms, conv, agglutinative=True)
+    # curr_time = time.clock()
+    # dc.process_freq_dist(fd)
+    # print "Time for N: %f" % (time.clock() - curr_time)
+    #
+    # testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh_verbs()
+    # dc = DictionaryCollector(paradigms, conv, agglutinative=True)
+    # curr_time = time.clock()
+    # dc.process_freq_dist(fd)
+    # print "Time for V: %f" % (time.clock() - curr_time)
