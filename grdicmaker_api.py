@@ -19,10 +19,7 @@ from sklearn import svm, preprocessing
 from uniparser.grammar import Grammar  # and this is the module from the parser
 
 
-logging.basicConfig(level=logging.DEBUG)
-moduleLogger = logging.getLogger(__name__)
-msgHandler = logging.StreamHandler(stream=sys.stderr)
-moduleLogger.addHandler(msgHandler)
+logging.basicConfig(level=logging.DEBUG, format = u'[%(asctime)s] %(levelname)s: %(message)s')
 
 
 class _PrefixFinder(FlexAutomaton):
@@ -170,14 +167,14 @@ class DictionaryCollector(object):
 
         currTime = time.clock()
         convNumber = g.load_stem_conversions(conversionPath)
-        moduleLogger.info('%d conversions loaded. Time consumed: %.4f seconds.', convNumber, time.clock() - currTime)
+        logging.info('%d conversions loaded. Time consumed: %.4f seconds.', convNumber, time.clock() - currTime)
 
         currTime = time.clock()
         paradigmNumber = g.load_paradigms(paradigmPath, relevantParadigms)
         if paradigmNumber:
-            moduleLogger.info('%d paradigms loaded. Time consumed: %.4f seconds.', paradigmNumber, time.clock() - currTime)
+            logging.info('%d paradigms loaded. Time consumed: %.4f seconds.', paradigmNumber, time.clock() - currTime)
         else:
-            moduleLogger.critical('%d paradigms loaded.', paradigmNumber)
+            logging.critical('%d paradigms loaded.', paradigmNumber)
             raise IOError()
         g.compile_all()
 
@@ -195,7 +192,7 @@ class DictionaryCollector(object):
         self._list_prefixes(g, pFinder)
         self.automaton.prefixes = self.prefixes
         self.conversions = g.stemConversions
-        moduleLogger.info("All paradigms processed.")
+        logging.info("All paradigms processed.")
 
     def _list_prefixes(self, grammar, prefixAutomaton):
         for p in grammar.paradigms.values():
