@@ -124,6 +124,10 @@ class LookupDic(object):
 
 
 class LookupDicKZ(LookupDic):
+    """
+    A class giving access to a dictionary of Kazakh.
+
+    """
 
     def __init__(self):
         yamlDicPath = os.path.join(os.path.abspath(__file__), u'dictionaries/kz/kz_lexemes.txt')
@@ -176,18 +180,30 @@ class LookupDicKZ(LookupDic):
 
 
 class LookupDicKatharevousa(LookupDic):
+    """
+    A class giving access to a dictionary of Katharevousa.
+
+    """
     def __init__(self):
         yamlDicPath = os.path.join(os.path.abspath(__file__), u'dictionaries/katharevousa/adj_os1.txt')
         LookupDic.__init__(self, yamlDicPath)
 
 
 class LookupDicAlbanian(LookupDic):
+    """
+    A class giving access to a dictionary of Albanian.
+
+    """
     def __init__(self):
         yamlDicPath = os.path.join(os.path.abspath(__file__), u'dictionaries/albanian/stems-all-cleaned.txt')
         LookupDic.__init__(self, yamlDicPath)
 
 
 class LookupDicUdmurt(LookupDic):
+    """
+    A class giving access to a dictionary of Udmurt.
+
+    """
     def __init__(self):
         yamlDicPaths = os.path.join(os.path.abspath(__file__), u'dictionaries/udmurt')
         LookupDic.__init__(self, yamlDicPaths)
