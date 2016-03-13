@@ -79,30 +79,29 @@ class Evals(object):
         self.approved = positiveWeight
         self.notApproved = negativeWeight
 
-    def evaluate(self, pathToInput, lookUpClass, weighted, threshold=STANDARD_THRESHOLD):
+    def evaluate(self, pathToInput, lookUp, weighted, threshold=STANDARD_THRESHOLD):
         """ Evaluate the data and show the weights of approved and disproved data.
         Args:
         - pathToInput: path to an input directory containing json data to evaluate;
-        - lookUpClass: a name of a class having a look_up() method to check if a lexeme is a valid one.
+        - lookUp: an instance having a look_up() method to check if a lexeme is a valid one.
         Instances of the class should not require any args while initializing;
         - weighted: a boolean parameter showing whether a number of (in)valid lexemes should be count
         or a number of their occurrences in the corpus.
         - threshold: a minimum frequency a sample should have to be added to the output. The default is STANDARD_THRESHOLD.
 
         """
-        dic = lookUpClass()
         if not weighted:
-            self._compile_evaluated_dic(pathToInput, dic, threshold, None, None, weight_func=lambda a: 1)
+            self._compile_evaluated_dic(pathToInput, lookUp, threshold, None, None, weight_func=lambda a: 1)
         else:
-            self._compile_evaluated_dic(pathToInput, dic, threshold, None, None, weight_func=Evals._sum_lex_freq)
+            self._compile_evaluated_dic(pathToInput, lookUp, threshold, None, None, weight_func=Evals._sum_lex_freq)
         return self.approved, self.notApproved
 
-    def annotate(self, pathToInput, pathToOutput, lookUpClass, positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
+    def annotate(self, pathToInput, pathToOutput, lookUp, positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
         """ Having evaluated the data, save the necessary number of samples to a file.
         Args:
         - pathToInput: path to an input directory containing json data to evaluate;
         - pathToOutput: path to a file where a data set compiled should be written;
-        - lookUpClass: a name of a class having a look_up() method to check if a lexeme is a valid one.
+        - lookUp: an instance having a look_up() method to check if a lexeme is a valid one.
         Instances of the class should not require any args while initializing;
         - positiveSampleNum: a number of positive samples in the output.
         The default is None; this means that all the positive samples will be included,
@@ -110,8 +109,7 @@ class Evals(object):
         - threshold: a minimum frequency a sample should have to be added to the output. The default is STANDARD_THRESHOLD.
 
         """
-        dic = lookUpClass()
-        self._compile_evaluated_dic(pathToInput, dic, threshold, positiveSampleNum, negativeSampleNum, weight_func=lambda a: 1)
+        self._compile_evaluated_dic(pathToInput, lookUp, threshold, positiveSampleNum, negativeSampleNum, weight_func=lambda a: 1)
         text = json.dumps(self.annotatedJson, encoding="utf-8", ensure_ascii=False, sort_keys=True, indent=1)
         with codecs.open(pathToOutput, 'w', 'utf-8') as f:
             f.write(text)
