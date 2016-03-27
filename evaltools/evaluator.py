@@ -97,7 +97,8 @@ class Evals(object):
         return self.approved, self.notApproved
 
     def annotate(self, pathToInput, pathToOutput, lookUp, positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
-        """ Having evaluated the data, save the necessary number of samples to a file.
+        """
+        Having evaluated the data, save the necessary number of samples to a file.
         Args:
         - pathToInput: path to an input directory containing json data to evaluate;
         - pathToOutput: path to a file where a data set compiled should be written;
