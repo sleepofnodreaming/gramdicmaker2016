@@ -130,9 +130,9 @@ class LookupDicKZ(LookupDic):
     """
 
     def __init__(self):
-        yamlDicPath = os.path.join(os.path.abspath(__file__), u'dictionaries/kz/kz_lexemes.txt')
+        yamlDicPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), u'dictionaries/kz/kz_lexemes.txt')
         LookupDic.__init__(self, yamlDicPath)
-        self.lexListPath = os.path.join(os.path.abspath(__file__), u'dictionaries/kz/AdditionalLexemes.txt')
+        self.lexListPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), u'dictionaries/kz/AdditionalLexemes.txt')
         self.additionalDic = self._compile_dic_from_list()
 
     def _set_renamer(self):
@@ -185,7 +185,7 @@ class LookupDicKatharevousa(LookupDic):
 
     """
     def __init__(self):
-        yamlDicPath = os.path.join(os.path.abspath(__file__), u'dictionaries/katharevousa/adj_os1.txt')
+        yamlDicPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), u'dictionaries/katharevousa/adj_os1.txt')
         LookupDic.__init__(self, yamlDicPath)
 
 
@@ -195,7 +195,7 @@ class LookupDicAlbanian(LookupDic):
 
     """
     def __init__(self):
-        yamlDicPath = os.path.join(os.path.abspath(__file__), u'dictionaries/albanian/stems-all-cleaned.txt')
+        yamlDicPath = os.path.join(os.path.dirname(os.path.abspath(__file__)), u'dictionaries/albanian/stems-all-cleaned.txt')
         LookupDic.__init__(self, yamlDicPath)
 
 
@@ -205,7 +205,7 @@ class LookupDicUdmurt(LookupDic):
 
     """
     def __init__(self):
-        yamlDicPaths = os.path.join(os.path.abspath(__file__), u'dictionaries/udmurt')
+        yamlDicPaths = os.path.join(os.path.dirname(os.path.abspath(__file__)), u'dictionaries/udmurt')
         LookupDic.__init__(self, yamlDicPaths)
 
     def _read_yaml_dic(self):
