@@ -11,10 +11,43 @@ KATHAREVOUSA_RELEVANT: paradigms covered with katharevousa category description.
 
 import codecs
 
-UDMURT_RELEVANT = (u'connect_adjectives', u'connect_verbs-I', u'Noun-num-j', u'Noun-num-soft', u'Noun-case', u'connect_verbs-I-soft', u'Noun-num-vowel', u'Noun-num-ija', u'connect_verbs-II', u'Noun-num-consonant')
-ALBANIAN_RELEVANT_II = (u'adj-1-5', u'adj-2-1-a', u'adj-2-1', u'adj-2-2-a', u'adj-2-2', u'adj-2-3', u'adj-3-1', u'adj-3-2')
-ALBANIAN_RELEVANT_I = (u'adj-1-1-a', u'adj-1-1-b', u'adj-1-1', u'adj-1-2-a', u'adj-1-2', u'adj-1-3', u'adj-1-4-a', u'adj-1-4')
+UDMURT_RELEVANT = (
+    u'connect_adjectives',
+    u'connect_verbs-I',
+    u'Noun-num-j',
+    u'Noun-num-soft',
+    u'Noun-case',
+    u'connect_verbs-I-soft',
+    u'Noun-num-vowel',
+    u'Noun-num-ija',
+    u'connect_verbs-II',
+    u'Noun-num-consonant'
+)
+
+ALBANIAN_RELEVANT_II = (
+    u'adj-1-5',
+    u'adj-2-1-a',
+    u'adj-2-1',
+    u'adj-2-2-a',
+    u'adj-2-2',
+    u'adj-2-3',
+    u'adj-3-1',
+    u'adj-3-2'
+)
+
+ALBANIAN_RELEVANT_I = (
+    u'adj-1-1-a',
+    u'adj-1-1-b',
+    u'adj-1-1',
+    u'adj-1-2-a',
+    u'adj-1-2',
+    u'adj-1-3',
+    u'adj-1-4-a',
+    u'adj-1-4'
+)
+
 KATHAREVOUSA_RELEVANT = (u'adj_os1', )
+
 
 class LangTestData(object):
     """ A set of methods to quickly access the data. All the public  methods return a triple:

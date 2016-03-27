@@ -889,9 +889,9 @@ class DatasetAnnotator(object):
 
 if __name__ == '__main__':
     import random
-    import test_data_readers
+    import data_accessors
 
-    testWordforms, paradigms, conv = test_data_readers.LangTestData.kazakh()
+    testWordforms, paradigms, conv = data_accessors.LangTestData.kazakh()
     fd = Counter(testWordforms)
 
     # dc = DictionaryCollector(paradigms, conv, agglutinative=True)
