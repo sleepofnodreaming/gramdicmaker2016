@@ -759,7 +759,7 @@ class DataTransformer(object):
         return self._dic_list_to_matrix(processedData, normalize)
 
 
-class Evals(object):
+class DatasetAnnotator(object):
     """ This class contains tools to evaluate the data got from the dictionary collector.
     The data should be saved to files which names are in accordance with the names of paradigms in a dictionary
     and put into one directory. An initialization of an instance is required to use both features (annotation or evaluation).
@@ -839,7 +839,7 @@ class Evals(object):
         if not weighted:
             self._compile_evaluated_dic(pathToInput, lookUp, threshold, None, None, weight_func=lambda a: 1)
         else:
-            self._compile_evaluated_dic(pathToInput, lookUp, threshold, None, None, weight_func=Evals._sum_lex_freq)
+            self._compile_evaluated_dic(pathToInput, lookUp, threshold, None, None, weight_func=DatasetAnnotator._sum_lex_freq)
         return self.approved, self.notApproved
 
     def annotate(self, pathToInput, pathToOutput, lookUp, positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
