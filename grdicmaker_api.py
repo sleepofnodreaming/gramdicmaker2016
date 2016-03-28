@@ -538,8 +538,11 @@ class DraftCleaner(object):
             headlines, featureMatrix = self.transformer.get_processing_data_matrix(dataML, dicCollectorObj, categories,
                                                                                    normalize, ablation_features)
             results = classifierTrained.predict(featureMatrix.toarray())
-            clearedParadigm = [dataML[i]["lex"] for i in xrange(len(results)) if
-                               int(results[i]) > 0]  # todo rewrite value check
+            clearedParadigm = [
+                {
+                    "lex": dataML[i]["lex"],
+                    "guess": (True if int(results[i]) > 0 else False)
+                } for i in xrange(len(results)) if int(results[i]) > 0]
             newDic[pName] = clearedParadigm
         return newDic
 
@@ -825,6 +828,31 @@ class DatasetAnnotator(object):
         self.approved = positiveWeight
         self.notApproved = negativeWeight
 
+    def _annotate_paradigm_data(self, data, paradigm, lookup):
+        """
+        Add a label "eval" to each lexeme in a data array.
+        :param data: an output of a classifier (a json: {"lex": ..., "guess": bool})
+        :param paradigm: a name of the paradigm;
+        :param lookup: a dictionary;
+        :return: -
+
+        """
+        for lexeme_box in data:
+            lex = lexeme_box["lex"]
+            is_appropriate = lookup.look_up(lex, paradigm)
+            lexeme_box["eval"] = is_appropriate
+
+    def annotate(self, dictionary, with_lookup):
+        """
+        Complete an input dictionary with labels showing whether a lexeme is correct according to a dictionary used.
+        :param dictionary: {"paradigm-name": {"lex": ..., "guess": ...}}
+        :param with_lookup: a dictionary having a look_up() method.
+        :return: -
+
+        """
+        for paradigm in dictionary:
+            self._annotate_paradigm_data(dictionary[paradigm], paradigm, with_lookup)
+
     def evaluate(self, pathToInput, lookUp, weighted, threshold=STANDARD_THRESHOLD):
         """ Evaluate the data and show the weights of approved and disproved data.
         Args:
@@ -842,7 +870,7 @@ class DatasetAnnotator(object):
             self._compile_evaluated_dic(pathToInput, lookUp, threshold, None, None, weight_func=DatasetAnnotator._sum_lex_freq)
         return self.approved, self.notApproved
 
-    def annotate(self, pathToInput, pathToOutput, lookUp, positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
+    def _annotate(self, pathToInput, pathToOutput, lookUp, positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
         """
         Having evaluated the data, save the necessary number of samples to a file.
         Args:
@@ -864,7 +892,7 @@ class DatasetAnnotator(object):
     def create_testset(self, wfs, paradigms, conv, agglutinative, pathToOutput, lookUp,
                        positiveSampleNum=None, negativeSampleNum=None, threshold=STANDARD_THRESHOLD):
         """
-
+        Generate an annotated data set and save it to a directory.
         :param wfs: a list of word forms;
         :param paradigms: a path to paradigm descriptions;
         :param conv: a path to conversion description;
@@ -882,7 +910,7 @@ class DatasetAnnotator(object):
         tdir = tempfile.mkdtemp(dir=os.getcwd())
         try:
             DataExportManager.export_to_jsons(dc, tdir)
-            self.annotate(tdir, pathToOutput, lookUp, positiveSampleNum, negativeSampleNum, threshold)
+            self._annotate(tdir, pathToOutput, lookUp, positiveSampleNum, negativeSampleNum, threshold)
         finally:
             shutil.rmtree(tdir)
 
