@@ -171,7 +171,10 @@ class DictionaryCollector(object):
         g = Grammar()
 
         currTime = time.clock()
-        convNumber = g.load_stem_conversions(conversionPath)
+        if conversionPath:
+            convNumber = g.load_stem_conversions(conversionPath)
+        else:
+            convNumber = 0
         logging.info('%d conversions loaded. Time consumed: %.4f seconds.', convNumber, time.clock() - currTime)
 
         currTime = time.clock()

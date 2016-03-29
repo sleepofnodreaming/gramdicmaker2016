@@ -1,16 +1,11 @@
 import codecs, re, os
 
 def read_file(fname, errorHandler=None):
-    try:
-        f = codecs.open(fname, 'r', 'utf-8-sig')
-        lines = [re.sub(u'#.*', u'', line.strip(u'\r\n'))\
+    f = codecs.open(fname, 'r', 'utf-8-sig')
+    lines = [re.sub(u'#.*', u'', line.strip(u'\r\n'))\
                  for line in f.readlines()]
-        f.close()
-    except IOError:
-        if errorHandler != None:
-            errorHandler.RaiseError(u'IOError: ' + fname +\
-                                    u' couldn\'t be opened.')
-        return []
+    f.close()
+
     arr, numLine = process_lines(lines, errorHandler)
     return arr
 
