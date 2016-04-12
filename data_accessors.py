@@ -10,6 +10,7 @@ KATHAREVOUSA_RELEVANT: paradigms covered with katharevousa category description.
 """
 
 import codecs
+import os
 
 UDMURT_RELEVANT = (
     u'connect_adjectives',
@@ -138,8 +139,8 @@ class LangTestData(object):
 
     @staticmethod
     def albanian():
-        testWordforms = LangTestData._colon_reader(u'test_data/albanian/concordance_freq.txt')
-        paradigms = u'test_data/albanian/paradigms-all.txt'
+        testWordforms = LangTestData._colon_reader(os.path.join(os.path.dirname(os.path.abspath(__file__)), u'test_data/albanian/concordance_freq.txt'))
+        paradigms = os.path.join(os.path.dirname(os.path.abspath(__file__)), u'test_data/albanian/paradigms-all.txt')
         conv = u''
         return testWordforms, paradigms, conv
 

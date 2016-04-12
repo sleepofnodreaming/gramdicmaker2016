@@ -372,6 +372,11 @@ class DictionaryCollector(object):
         self._merge_lexemes(pToStemDataCollected)
         self.dics = pToStemDataCollected
 
+        c = 0
+        for paradigm in self.dics:
+            c += len(self.dics[paradigm])
+        logging.info(u"There are %d lexemes in the draft.", c)
+
     def process_word_list(self, wordList):
         """
         Parse all the words in a list and put them to a dict
@@ -545,7 +550,7 @@ class DraftCleaner(object):
                 {
                     "lex": dataML[i]["lex"],
                     "guess": (True if int(results[i]) > 0 else False)
-                } for i in xrange(len(results)) if int(results[i]) > 0]
+                } for i in xrange(len(results))]
             newDic[pName] = clearedParadigm
         return newDic
 
@@ -730,6 +735,7 @@ class DataTransformer(object):
         self._read_category_val_alternations(self.categoryPath)  # self.categoryDescription
         self._read_paradigm_lengths()  # self.pLengths
         # and this is a table maker itself
+        setParadigms = set()
         with codecs.open(self.MLDataPath, 'r', 'utf-8-sig') as f:
             data = json.loads(f.read())
             processedData = []
@@ -737,6 +743,7 @@ class DataTransformer(object):
             for lexeme in data:
                 if lexeme["paradigm"] in toExclude:
                     continue
+                else: setParadigms.add(lexeme["paradigm"])
 
                 lexemeFeatureDic = self._convert_lexeme_to_feature_dic(lexeme, ablation_features)
                 processedData.append(lexemeFeatureDic)
@@ -745,6 +752,10 @@ class DataTransformer(object):
                 targets.append(sampleEval)
 
             headlines, matrix = self._dic_list_to_matrix(processedData, normalize)
+            if setParadigms:
+                logging.info("Training set paradigms: %s", u" ".join(list(setParadigms)))
+            else:
+                logging.critical("Training set is empty.")
 
             return headlines, matrix, targets
 
